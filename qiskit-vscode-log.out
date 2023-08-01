@@ -1,0 +1,978 @@
+verbose - Object: Activating qiskit-vscode extension...
+verbose - Object: ✨ Activating qiskit-vscode extension... ✨
+verbose - Object: Checking for Python dependencies...
+verbose - Object: Package: python Version: 3.10.6
+verbose - Object: Package: pip Version: 23.2.1
+verbose - Object: Check for required python packages...
+debug - PackageManager: Checking package qiskit 0.6.0 installation
+debug - PackageManager: Checking package qiskit-aqua 0.4.0 installation
+debug - PackageManager: Checking package qiskit-chemistry 0.4.2 installation
+debug - PackageManager: Checking package IBMQuantumExperience 2.0.4 installation
+verbose - unknown: Qiskit VSCode Extension dependencies found! 👌 python v 3.10.6
+👌 pip v 23.2.1
+
+verbose - Object: qiskit-vscode extension successfully loaded!
+verbose - Object: 🚀 qiskit-vscode extension loaded! 🚀
+verbose - PackageManager: Starting installation process for qiskit-chemistry ...
+verbose - PackageManager: Starting installation process for IBMQuantumExperience ...
+verbose - PackageManager: Starting installation process for qiskit-aqua ...
+verbose - PackageManager: Starting non-mandatory update process for qiskit ...
+verbose - PackageManager: Starting update process for qiskit ...
+verbose - PackageManager: Clicked on OK!
+verbose - PackageManager: Clicked on OK!
+verbose - PipExecutor: Package qiskit updated: Requirement already satisfied: qiskit in ./QiskitLearningCourse/lib/python3.10/site-packages (0.43.0)
+Collecting qiskit
+  Downloading qiskit-0.43.3.tar.gz (9.1 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting qiskit-terra==0.24.2 (from qiskit)
+  Obtaining dependency information for qiskit-terra==0.24.2 from https://files.pythonhosted.org/packages/4d/d6/8510f3bf4d739604e5e66a0c46e80f88e0f08566cd4f22c0a125441fa7b8/qiskit_terra-0.24.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading qiskit_terra-0.24.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.6 kB)
+Collecting qiskit-aer==0.12.2 (from qiskit)
+  Obtaining dependency information for qiskit-aer==0.12.2 from https://files.pythonhosted.org/packages/20/71/04e7d2a4265445d107b4bd17d6602b241a18b912c9d7f5697e3a7dc6d6f0/qiskit_aer-0.12.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading qiskit_aer-0.12.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.3 kB)
+Requirement already satisfied: qiskit-ibmq-provider==0.20.2 in ./QiskitLearningCourse/lib/python3.10/site-packages (from qiskit) (0.20.2)
+Requirement already satisfied: numpy>=1.16.3 in ./QiskitLearningCourse/lib/python3.10/site-packages (from qiskit-aer==0.12.2->qiskit) (1.23.5)
+Requirement already satisfied: scipy>=1.0 in ./QiskitLearningCourse/lib/python3.10/site-packages (from qiskit-aer==0.12.2->qiskit) (1.10.1)
+Requirement already satisfied: requests>=2.19 in ./QiskitLearningCourse/lib/python3.10/site-packages (from qiskit-ibmq-provider==0.20.2->qiskit) (2.31.0)
+Requirement already satisfied: requests-ntlm<=1.1.0 in ./QiskitLearningCourse/lib/python3.10/site-packages (from qiskit-ibmq-provider==0.20.2->qiskit) (1.1.0)
+Requirement already satisfied: urllib3>=1.21.1 in ./QiskitLearningCourse/lib/python3.10/site-packages (from qiskit-ibmq-provider==0.20.2->qiskit) (1.26.16)
+Requirement already satisfied: python-dateutil>=2.8.0 in ./QiskitLearningCourse/lib/python3.10/site-packages (from qiskit-ibmq-provider==0.20.2->qiskit) (2.8.2)
+Requirement already satisfied: websocket-client>=1.5.1 in ./QiskitLearningCourse/lib/python3.10/site-packages (from qiskit-ibmq-provider==0.20.2->qiskit) (1.5.2)
+Requirement already satisfied: websockets>=10.0 in ./QiskitLearningCourse/lib/python3.10/site-packages (from qiskit-ibmq-provider==0.20.2->qiskit) (11.0.3)
+Requirement already satisfied: rustworkx>=0.12.0 in ./QiskitLearningCourse/lib/python3.10/site-packages (from qiskit-terra==0.24.2->qiskit) (0.12.1)
+Requirement already satisfied: ply>=3.10 in ./QiskitLearningCourse/lib/python3.10/site-packages (from qiskit-terra==0.24.2->qiskit) (3.11)
+Requirement already satisfied: psutil>=5 in ./QiskitLearningCourse/lib/python3.10/site-packages (from qiskit-terra==0.24.2->qiskit) (5.9.5)
+Requirement already satisfied: sympy>=1.3 in ./QiskitLearningCourse/lib/python3.10/site-packages (from qiskit-terra==0.24.2->qiskit) (1.12)
+Requirement already satisfied: dill>=0.3 in ./QiskitLearningCourse/lib/python3.10/site-packages (from qiskit-terra==0.24.2->qiskit) (0.3.6)
+Requirement already satisfied: stevedore>=3.0.0 in ./QiskitLearningCourse/lib/python3.10/site-packages (from qiskit-terra==0.24.2->qiskit) (5.1.0)
+Requirement already satisfied: symengine<0.10,>=0.9 in ./QiskitLearningCourse/lib/python3.10/site-packages (from qiskit-terra==0.24.2->qiskit) (0.9.2)
+Requirement already satisfied: six>=1.5 in ./QiskitLearningCourse/lib/python3.10/site-packages (from python-dateutil>=2.8.0->qiskit-ibmq-provider==0.20.2->qiskit) (1.16.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in ./QiskitLearningCourse/lib/python3.10/site-packages (from requests>=2.19->qiskit-ibmq-provider==0.20.2->qiskit) (3.1.0)
+Requirement already satisfied: idna<4,>=2.5 in ./QiskitLearningCourse/lib/python3.10/site-packages (from requests>=2.19->qiskit-ibmq-provider==0.20.2->qiskit) (3.4)
+Requirement already satisfied: certifi>=2017.4.17 in ./QiskitLearningCourse/lib/python3.10/site-packages (from requests>=2.19->qiskit-ibmq-provider==0.20.2->qiskit) (2023.5.7)
+Requirement already satisfied: ntlm-auth>=1.0.2 in ./QiskitLearningCourse/lib/python3.10/site-packages (from requests-ntlm<=1.1.0->qiskit-ibmq-provider==0.20.2->qiskit) (1.5.0)
+Requirement already satisfied: cryptography>=1.3 in ./QiskitLearningCourse/lib/python3.10/site-packages (from requests-ntlm<=1.1.0->qiskit-ibmq-provider==0.20.2->qiskit) (40.0.2)
+Requirement already satisfied: pbr!=2.1.0,>=2.0.0 in ./QiskitLearningCourse/lib/python3.10/site-packages (from stevedore>=3.0.0->qiskit-terra==0.24.2->qiskit) (5.11.1)
+Requirement already satisfied: mpmath>=0.19 in ./QiskitLearningCourse/lib/python3.10/site-packages (from sympy>=1.3->qiskit-terra==0.24.2->qiskit) (1.3.0)
+Requirement already satisfied: cffi>=1.12 in ./QiskitLearningCourse/lib/python3.10/site-packages (from cryptography>=1.3->requests-ntlm<=1.1.0->qiskit-ibmq-provider==0.20.2->qiskit) (1.15.1)
+Requirement already satisfied: pycparser in ./QiskitLearningCourse/lib/python3.10/site-packages (from cffi>=1.12->cryptography>=1.3->requests-ntlm<=1.1.0->qiskit-ibmq-provider==0.20.2->qiskit) (2.21)
+Downloading qiskit_aer-0.12.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 1.4 MB/s eta 0:00:00
+Downloading qiskit_terra-0.24.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (6.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.0/6.0 MB 3.1 MB/s eta 0:00:00
+Building wheels for collected packages: qiskit
+  Building wheel for qiskit (pyproject.toml): started
+  Building wheel for qiskit (pyproject.toml): finished with status 'done'
+  Created wheel for qiskit: filename=qiskit-0.43.3-py3-none-any.whl size=7638 sha256=4161bf218351f169d01fc87b7b6fc235cf1bdc749861d0d0fd4bf836039b21a7
+  Stored in directory: /tmp/pip-ephem-wheel-cache-xtych4bc/wheels/c3/88/e5/483e1c761b53470dad74ee047f8ad4d67d4f52ec9dc9d13563
+Successfully built qiskit
+Installing collected packages: qiskit-terra, qiskit-aer, qiskit
+  Attempting uninstall: qiskit-terra
+    Found existing installation: qiskit-terra 0.24.0
+    Uninstalling qiskit-terra-0.24.0:
+      Successfully uninstalled qiskit-terra-0.24.0
+  Attempting uninstall: qiskit-aer
+    Found existing installation: qiskit-aer 0.12.0
+    Uninstalling qiskit-aer-0.12.0:
+      Successfully uninstalled qiskit-aer-0.12.0
+  Attempting uninstall: qiskit
+    Found existing installation: qiskit 0.43.0
+    Uninstalling qiskit-0.43.0:
+      Successfully uninstalled qiskit-0.43.0
+Successfully installed qiskit-0.43.3 qiskit-aer-0.12.2 qiskit-terra-0.24.2
+
+info - PackageManager: Package [object Object] updated
+info - Object: Go to update qiskit
+verbose - PipExecutor: Package qiskit-aqua not installed: Collecting qiskit-aqua
+  Downloading qiskit_aqua-0.9.5-py3-none-any.whl (2.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 1.9 MB/s eta 0:00:00
+Requirement already satisfied: qiskit-terra>=0.18.0 in ./QiskitLearningCourse/lib/python3.10/site-packages (from qiskit-aqua) (0.24.0)
+Collecting qiskit-ignis>=0.6.0 (from qiskit-aqua)
+  Downloading qiskit_ignis-0.7.1-py3-none-any.whl (198 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 198.7/198.7 kB 1.7 MB/s eta 0:00:00
+Requirement already satisfied: scipy>=1.4 in ./QiskitLearningCourse/lib/python3.10/site-packages (from qiskit-aqua) (1.10.1)
+Requirement already satisfied: sympy>=1.3 in ./QiskitLearningCourse/lib/python3.10/site-packages (from qiskit-aqua) (1.12)
+Requirement already satisfied: numpy>=1.17 in ./QiskitLearningCourse/lib/python3.10/site-packages (from qiskit-aqua) (1.23.5)
+Requirement already satisfied: psutil>=5 in ./QiskitLearningCourse/lib/python3.10/site-packages (from qiskit-aqua) (5.9.5)
+Collecting scikit-learn>=0.20.0 (from qiskit-aqua)
+  Obtaining dependency information for scikit-learn>=0.20.0 from https://files.pythonhosted.org/packages/5c/e9/ee572691a3fb05555bcde41826faad29ae4bc1fb07982e7f53d54a176879/scikit_learn-1.3.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading scikit_learn-1.3.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+Collecting dlx<=1.0.4 (from qiskit-aqua)
+  Using cached dlx-1.0.4-py3-none-any.whl
+Collecting docplex>=2.21.207 (from qiskit-aqua)
+  Using cached docplex-2.25.236-py3-none-any.whl
+Collecting fastdtw<=0.3.4 (from qiskit-aqua)
+  Using cached fastdtw-0.3.4-py3-none-any.whl
+Requirement already satisfied: setuptools>=40.1.0 in ./QiskitLearningCourse/lib/python3.10/site-packages (from qiskit-aqua) (59.6.0)
+Collecting h5py<3.3.0 (from qiskit-aqua)
+  Downloading h5py-3.2.1.tar.gz (368 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 368.2/368.2 kB 3.4 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: still running...
+  Installing backend dependencies: finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × pip subprocess to install backend dependencies did not run successfully.
+  │ exit code: 1
+  ╰─> [836 lines of output]
+      Collecting Cython>=0.29.15
+        Obtaining dependency information for Cython>=0.29.15 from https://files.pythonhosted.org/packages/6f/8c/68139f464aeee699b04ec401b9de0d7e05fdd3a123c4c13429b887e16c8f/Cython-3.0.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+        Downloading Cython-3.0.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.1 kB)
+      Collecting pkgconfig
+        Downloading pkgconfig-1.5.5-py3-none-any.whl (6.7 kB)
+      Collecting numpy==1.19.3
+        Downloading numpy-1.19.3.zip (7.3 MB)
+           ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.3/7.3 MB 1.6 MB/s eta 0:00:00
+        Installing build dependencies: started
+        Installing build dependencies: finished with status 'done'
+        Getting requirements to build wheel: started
+        Getting requirements to build wheel: finished with status 'done'
+        Preparing metadata (pyproject.toml): started
+        Preparing metadata (pyproject.toml): finished with status 'done'
+      Downloading Cython-3.0.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.6 MB)
+         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.6/3.6 MB 687.3 kB/s eta 0:00:00
+      Building wheels for collected packages: numpy
+        Building wheel for numpy (pyproject.toml): started
+        Building wheel for numpy (pyproject.toml): still running...
+        Building wheel for numpy (pyproject.toml): finished with status 'error'
+        error: subprocess-exited-with-error
+      
+        × Building wheel for numpy (pyproject.toml) did not run successfully.
+        │ exit code: 1
+        ╰─> [805 lines of output]
+            setup.py:67: RuntimeWarning: NumPy 1.19.3 may not yet support Python 3.10.
+              warnings.warn(
+            Running from numpy source directory.
+            /tmp/pip-install-ayz5mq5d/numpy_f4eb2cc454524c98b7a8fc916afc5971/tools/cythonize.py:67: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+              from distutils.version import LooseVersion
+            numpy/random/_bounded_integers.pxd.in has not changed
+            numpy/random/_sfc64.pyx has not changed
+            numpy/random/_generator.pyx has not changed
+            numpy/random/_pcg64.pyx has not changed
+            numpy/random/_common.pyx has not changed
+            Processing numpy/random/_bounded_integers.pyx
+            numpy/random/_mt19937.pyx has not changed
+            numpy/random/_philox.pyx has not changed
+            numpy/random/mtrand.pyx has not changed
+            numpy/random/bit_generator.pyx has not changed
+            numpy/random/_bounded_integers.pyx.in has not changed
+            Cythonizing sources
+            blas_opt_info:
+            blas_mkl_info:
+            customize UnixCCompiler
+              libraries mkl_rt not found in ['/home/vm/Documents/QiskitLearningCourse/lib', '/usr/local/lib', '/usr/lib64', '/usr/lib', '/usr/lib/x86_64-linux-gnu']
+              NOT AVAILABLE
+      
+            blis_info:
+              libraries blis not found in ['/home/vm/Documents/QiskitLearningCourse/lib', '/usr/local/lib', '/usr/lib64', '/usr/lib', '/usr/lib/x86_64-linux-gnu']
+              NOT AVAILABLE
+      
+            openblas_info:
+            C compiler: x86_64-linux-gnu-gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC
+      
+            creating /tmp/tmp966w_3mb/tmp
+            creating /tmp/tmp966w_3mb/tmp/tmp966w_3mb
+            compile options: '-c'
+            x86_64-linux-gnu-gcc: /tmp/tmp966w_3mb/source.c
+            x86_64-linux-gnu-gcc /tmp/tmp966w_3mb/tmp/tmp966w_3mb/source.o -lopenblas -o /tmp/tmp966w_3mb/a.out
+              FOUND:
+                libraries = ['openblas', 'openblas']
+                library_dirs = ['/usr/lib/x86_64-linux-gnu']
+                language = c
+                define_macros = [('HAVE_CBLAS', None)]
+      
+              FOUND:
+                libraries = ['openblas', 'openblas']
+                library_dirs = ['/usr/lib/x86_64-linux-gnu']
+                language = c
+                define_macros = [('HAVE_CBLAS', None)]
+      
+            non-existing path in 'numpy/distutils': 'site.cfg'
+            lapack_opt_info:
+            lapack_mkl_info:
+              libraries mkl_rt not found in ['/home/vm/Documents/QiskitLearningCourse/lib', '/usr/local/lib', '/usr/lib64', '/usr/lib', '/usr/lib/x86_64-linux-gnu']
+              NOT AVAILABLE
+      
+            openblas_lapack_info:
+            C compiler: x86_64-linux-gnu-gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC
+      
+            creating /tmp/tmp1bjuqwce/tmp
+            creating /tmp/tmp1bjuqwce/tmp/tmp1bjuqwce
+            compile options: '-c'
+            x86_64-linux-gnu-gcc: /tmp/tmp1bjuqwce/source.c
+            x86_64-linux-gnu-gcc /tmp/tmp1bjuqwce/tmp/tmp1bjuqwce/source.o -lopenblas -o /tmp/tmp1bjuqwce/a.out
+              FOUND:
+                libraries = ['openblas', 'openblas']
+                library_dirs = ['/usr/lib/x86_64-linux-gnu']
+                language = c
+                define_macros = [('HAVE_CBLAS', None)]
+      
+              FOUND:
+                libraries = ['openblas', 'openblas']
+                library_dirs = ['/usr/lib/x86_64-linux-gnu']
+                language = c
+                define_macros = [('HAVE_CBLAS', None)]
+      
+            /usr/lib/python3.10/distutils/dist.py:274: UserWarning: Unknown distribution option: 'define_macros'
+              warnings.warn(msg)
+            running bdist_wheel
+            running build
+            running config_cc
+            unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+            running config_fc
+            unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+            running build_src
+            build_src
+            building py_modules sources
+            building library "npymath" sources
+              adding 'build/src.linux-x86_64-3.10/numpy/core/src/npymath' to include_dirs.
+            None - nothing done with h_files = ['build/src.linux-x86_64-3.10/numpy/core/src/npymath/npy_math_internal.h']
+            building library "npysort" sources
+              adding 'build/src.linux-x86_64-3.10/numpy/core/src/common' to include_dirs.
+            None - nothing done with h_files = ['build/src.linux-x86_64-3.10/numpy/core/src/common/npy_sort.h', 'build/src.linux-x86_64-3.10/numpy/core/src/common/npy_partition.h', 'build/src.linux-x86_64-3.10/numpy/core/src/common/npy_binsearch.h']
+            building library "npyrandom" sources
+            building extension "numpy.core._multiarray_tests" sources
+            building extension "numpy.core._multiarray_umath" sources
+              adding 'build/src.linux-x86_64-3.10/numpy/core/src/umath' to include_dirs.
+              adding 'build/src.linux-x86_64-3.10/numpy/core/src/npymath' to include_dirs.
+              adding 'build/src.linux-x86_64-3.10/numpy/core/src/common' to include_dirs.
+            numpy.core - nothing done with h_files = ['build/src.linux-x86_64-3.10/numpy/core/src/umath/funcs.inc', 'build/src.linux-x86_64-3.10/numpy/core/src/umath/simd.inc', 'build/src.linux-x86_64-3.10/numpy/core/src/umath/loops.h', 'build/src.linux-x86_64-3.10/numpy/core/src/umath/matmul.h', 'build/src.linux-x86_64-3.10/numpy/core/src/umath/clip.h', 'build/src.linux-x86_64-3.10/numpy/core/src/npymath/npy_math_internal.h', 'build/src.linux-x86_64-3.10/numpy/core/src/common/templ_common.h', 'build/src.linux-x86_64-3.10/numpy/core/include/numpy/config.h', 'build/src.linux-x86_64-3.10/numpy/core/include/numpy/_numpyconfig.h', 'build/src.linux-x86_64-3.10/numpy/core/include/numpy/__multiarray_api.h', 'build/src.linux-x86_64-3.10/numpy/core/include/numpy/__ufunc_api.h']
+            building extension "numpy.core._umath_tests" sources
+            building extension "numpy.core._rational_tests" sources
+            building extension "numpy.core._struct_ufunc_tests" sources
+            building extension "numpy.core._operand_flag_tests" sources
+            building extension "numpy.fft._pocketfft_internal" sources
+            building extension "numpy.linalg.lapack_lite" sources
+            building extension "numpy.linalg._umath_linalg" sources
+            building extension "numpy.random._mt19937" sources
+            building extension "numpy.random._philox" sources
+            building extension "numpy.random._pcg64" sources
+            building extension "numpy.random._sfc64" sources
+            building extension "numpy.random._common" sources
+            building extension "numpy.random.bit_generator" sources
+            building extension "numpy.random._generator" sources
+            building extension "numpy.random._bounded_integers" sources
+            building extension "numpy.random.mtrand" sources
+            building data_files sources
+            build_src: building npy-pkg config files
+            running build_py
+            creating build/lib.linux-x86_64-3.10
+            creating build/lib.linux-x86_64-3.10/numpy
+            copying numpy/ctypeslib.py -> build/lib.linux-x86_64-3.10/numpy
+            copying numpy/_pytesttester.py -> build/lib.linux-x86_64-3.10/numpy
+            copying numpy/version.py -> build/lib.linux-x86_64-3.10/numpy
+            copying numpy/conftest.py -> build/lib.linux-x86_64-3.10/numpy
+            copying numpy/dual.py -> build/lib.linux-x86_64-3.10/numpy
+            copying numpy/_globals.py -> build/lib.linux-x86_64-3.10/numpy
+            copying numpy/matlib.py -> build/lib.linux-x86_64-3.10/numpy
+            copying numpy/__init__.py -> build/lib.linux-x86_64-3.10/numpy
+            copying numpy/setup.py -> build/lib.linux-x86_64-3.10/numpy
+            copying numpy/_distributor_init.py -> build/lib.linux-x86_64-3.10/numpy
+            copying build/src.linux-x86_64-3.10/numpy/__config__.py -> build/lib.linux-x86_64-3.10/numpy
+            creating build/lib.linux-x86_64-3.10/numpy/compat
+            copying numpy/compat/py3k.py -> build/lib.linux-x86_64-3.10/numpy/compat
+            copying numpy/compat/_inspect.py -> build/lib.linux-x86_64-3.10/numpy/compat
+            copying numpy/compat/__init__.py -> build/lib.linux-x86_64-3.10/numpy/compat
+            copying numpy/compat/setup.py -> build/lib.linux-x86_64-3.10/numpy/compat
+            creating build/lib.linux-x86_64-3.10/numpy/compat/tests
+            copying numpy/compat/tests/test_compat.py -> build/lib.linux-x86_64-3.10/numpy/compat/tests
+            copying numpy/compat/tests/__init__.py -> build/lib.linux-x86_64-3.10/numpy/compat/tests
+            creating build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/shape_base.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/multiarray.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/records.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/_internal.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/function_base.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/_dtype.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/defchararray.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/overrides.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/_string_helpers.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/arrayprint.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/numeric.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/umath.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/fromnumeric.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/_add_newdocs.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/_exceptions.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/setup_common.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/getlimits.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/_ufunc_config.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/_asarray.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/memmap.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/cversions.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/_dtype_ctypes.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/umath_tests.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/einsumfunc.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/numerictypes.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/_type_aliases.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/__init__.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/_methods.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/setup.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/machar.py -> build/lib.linux-x86_64-3.10/numpy/core
+            copying numpy/core/code_generators/generate_numpy_api.py -> build/lib.linux-x86_64-3.10/numpy/core
+            creating build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_nditer.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_einsum.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/_locales.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_indexerrors.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_regression.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_extint128.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_numeric.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_unicode.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_mem_overlap.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_longdouble.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_scalarmath.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_api.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_umath_complex.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_multiarray.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_overrides.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_cpu_features.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_umath.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_half.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_deprecations.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_memmap.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_scalarprint.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_numerictypes.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test__exceptions.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_scalarbuffer.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_function_base.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_shape_base.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_errstate.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_scalar_methods.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_scalarinherit.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_item_selection.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_records.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_ufunc.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_print.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_conversion_utils.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_scalar_ctors.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_machar.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_dtype.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_defchararray.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_indexing.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/__init__.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_umath_accuracy.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_protocols.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_arrayprint.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_abc.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_getlimits.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            copying numpy/core/tests/test_datetime.py -> build/lib.linux-x86_64-3.10/numpy/core/tests
+            creating build/lib.linux-x86_64-3.10/numpy/distutils
+            copying numpy/distutils/line_endings.py -> build/lib.linux-x86_64-3.10/numpy/distutils
+            copying numpy/distutils/pathccompiler.py -> build/lib.linux-x86_64-3.10/numpy/distutils
+            copying numpy/distutils/mingw32ccompiler.py -> build/lib.linux-x86_64-3.10/numpy/distutils
+            copying numpy/distutils/_shell_utils.py -> build/lib.linux-x86_64-3.10/numpy/distutils
+            copying numpy/distutils/unixccompiler.py -> build/lib.linux-x86_64-3.10/numpy/distutils
+            copying numpy/distutils/npy_pkg_config.py -> build/lib.linux-x86_64-3.10/numpy/distutils
+            copying numpy/distutils/conv_template.py -> build/lib.linux-x86_64-3.10/numpy/distutils
+            copying numpy/distutils/numpy_distribution.py -> build/lib.linux-x86_64-3.10/numpy/distutils
+            copying numpy/distutils/ccompiler.py -> build/lib.linux-x86_64-3.10/numpy/distutils
+            copying numpy/distutils/intelccompiler.py -> build/lib.linux-x86_64-3.10/numpy/distutils
+            copying numpy/distutils/log.py -> build/lib.linux-x86_64-3.10/numpy/distutils
+            copying numpy/distutils/system_info.py -> build/lib.linux-x86_64-3.10/numpy/distutils
+            copying numpy/distutils/cpuinfo.py -> build/lib.linux-x86_64-3.10/numpy/distutils
+            copying numpy/distutils/misc_util.py -> build/lib.linux-x86_64-3.10/numpy/distutils
+            copying numpy/distutils/extension.py -> build/lib.linux-x86_64-3.10/numpy/distutils
+            copying numpy/distutils/__init__.py -> build/lib.linux-x86_64-3.10/numpy/distutils
+            copying numpy/distutils/msvc9compiler.py -> build/lib.linux-x86_64-3.10/numpy/distutils
+            copying numpy/distutils/msvccompiler.py -> build/lib.linux-x86_64-3.10/numpy/distutils
+            copying numpy/distutils/setup.py -> build/lib.linux-x86_64-3.10/numpy/distutils
+            copying numpy/distutils/exec_command.py -> build/lib.linux-x86_64-3.10/numpy/distutils
+            copying numpy/distutils/core.py -> build/lib.linux-x86_64-3.10/numpy/distutils
+            copying numpy/distutils/lib2def.py -> build/lib.linux-x86_64-3.10/numpy/distutils
+            copying numpy/distutils/from_template.py -> build/lib.linux-x86_64-3.10/numpy/distutils
+            copying build/src.linux-x86_64-3.10/numpy/distutils/__config__.py -> build/lib.linux-x86_64-3.10/numpy/distutils
+            creating build/lib.linux-x86_64-3.10/numpy/distutils/command
+            copying numpy/distutils/command/autodist.py -> build/lib.linux-x86_64-3.10/numpy/distutils/command
+            copying numpy/distutils/command/develop.py -> build/lib.linux-x86_64-3.10/numpy/distutils/command
+            copying numpy/distutils/command/install_headers.py -> build/lib.linux-x86_64-3.10/numpy/distutils/command
+            copying numpy/distutils/command/build.py -> build/lib.linux-x86_64-3.10/numpy/distutils/command
+            copying numpy/distutils/command/egg_info.py -> build/lib.linux-x86_64-3.10/numpy/distutils/command
+            copying numpy/distutils/command/build_scripts.py -> build/lib.linux-x86_64-3.10/numpy/distutils/command
+            copying numpy/distutils/command/bdist_rpm.py -> build/lib.linux-x86_64-3.10/numpy/distutils/command
+            copying numpy/distutils/command/build_clib.py -> build/lib.linux-x86_64-3.10/numpy/distutils/command
+            copying numpy/distutils/command/install_data.py -> build/lib.linux-x86_64-3.10/numpy/distutils/command
+            copying numpy/distutils/command/build_py.py -> build/lib.linux-x86_64-3.10/numpy/distutils/command
+            copying numpy/distutils/command/sdist.py -> build/lib.linux-x86_64-3.10/numpy/distutils/command
+            copying numpy/distutils/command/config_compiler.py -> build/lib.linux-x86_64-3.10/numpy/distutils/command
+            copying numpy/distutils/command/__init__.py -> build/lib.linux-x86_64-3.10/numpy/distutils/command
+            copying numpy/distutils/command/build_src.py -> build/lib.linux-x86_64-3.10/numpy/distutils/command
+            copying numpy/distutils/command/config.py -> build/lib.linux-x86_64-3.10/numpy/distutils/command
+            copying numpy/distutils/command/build_ext.py -> build/lib.linux-x86_64-3.10/numpy/distutils/command
+            copying numpy/distutils/command/install.py -> build/lib.linux-x86_64-3.10/numpy/distutils/command
+            copying numpy/distutils/command/install_clib.py -> build/lib.linux-x86_64-3.10/numpy/distutils/command
+            creating build/lib.linux-x86_64-3.10/numpy/distutils/fcompiler
+            copying numpy/distutils/fcompiler/mips.py -> build/lib.linux-x86_64-3.10/numpy/distutils/fcompiler
+            copying numpy/distutils/fcompiler/sun.py -> build/lib.linux-x86_64-3.10/numpy/distutils/fcompiler
+            copying numpy/distutils/fcompiler/nv.py -> build/lib.linux-x86_64-3.10/numpy/distutils/fcompiler
+            copying numpy/distutils/fcompiler/environment.py -> build/lib.linux-x86_64-3.10/numpy/distutils/fcompiler
+            copying numpy/distutils/fcompiler/compaq.py -> build/lib.linux-x86_64-3.10/numpy/distutils/fcompiler
+            copying numpy/distutils/fcompiler/pg.py -> build/lib.linux-x86_64-3.10/numpy/distutils/fcompiler
+            copying numpy/distutils/fcompiler/gnu.py -> build/lib.linux-x86_64-3.10/numpy/distutils/fcompiler
+            copying numpy/distutils/fcompiler/g95.py -> build/lib.linux-x86_64-3.10/numpy/distutils/fcompiler
+            copying numpy/distutils/fcompiler/lahey.py -> build/lib.linux-x86_64-3.10/numpy/distutils/fcompiler
+            copying numpy/distutils/fcompiler/pathf95.py -> build/lib.linux-x86_64-3.10/numpy/distutils/fcompiler
+            copying numpy/distutils/fcompiler/absoft.py -> build/lib.linux-x86_64-3.10/numpy/distutils/fcompiler
+            copying numpy/distutils/fcompiler/vast.py -> build/lib.linux-x86_64-3.10/numpy/distutils/fcompiler
+            copying numpy/distutils/fcompiler/nag.py -> build/lib.linux-x86_64-3.10/numpy/distutils/fcompiler
+            copying numpy/distutils/fcompiler/hpux.py -> build/lib.linux-x86_64-3.10/numpy/distutils/fcompiler
+            copying numpy/distutils/fcompiler/intel.py -> build/lib.linux-x86_64-3.10/numpy/distutils/fcompiler
+            copying numpy/distutils/fcompiler/__init__.py -> build/lib.linux-x86_64-3.10/numpy/distutils/fcompiler
+            copying numpy/distutils/fcompiler/none.py -> build/lib.linux-x86_64-3.10/numpy/distutils/fcompiler
+            copying numpy/distutils/fcompiler/ibm.py -> build/lib.linux-x86_64-3.10/numpy/distutils/fcompiler
+            creating build/lib.linux-x86_64-3.10/numpy/distutils/tests
+            copying numpy/distutils/tests/test_fcompiler.py -> build/lib.linux-x86_64-3.10/numpy/distutils/tests
+            copying numpy/distutils/tests/test_exec_command.py -> build/lib.linux-x86_64-3.10/numpy/distutils/tests
+            copying numpy/distutils/tests/test_mingw32ccompiler.py -> build/lib.linux-x86_64-3.10/numpy/distutils/tests
+            copying numpy/distutils/tests/test_fcompiler_intel.py -> build/lib.linux-x86_64-3.10/numpy/distutils/tests
+            copying numpy/distutils/tests/test_fcompiler_nagfor.py -> build/lib.linux-x86_64-3.10/numpy/distutils/tests
+            copying numpy/distutils/tests/test_system_info.py -> build/lib.linux-x86_64-3.10/numpy/distutils/tests
+            copying numpy/distutils/tests/test_fcompiler_gnu.py -> build/lib.linux-x86_64-3.10/numpy/distutils/tests
+            copying numpy/distutils/tests/test_shell_utils.py -> build/lib.linux-x86_64-3.10/numpy/distutils/tests
+            copying numpy/distutils/tests/test_npy_pkg_config.py -> build/lib.linux-x86_64-3.10/numpy/distutils/tests
+            copying numpy/distutils/tests/__init__.py -> build/lib.linux-x86_64-3.10/numpy/distutils/tests
+            copying numpy/distutils/tests/test_from_template.py -> build/lib.linux-x86_64-3.10/numpy/distutils/tests
+            copying numpy/distutils/tests/test_misc_util.py -> build/lib.linux-x86_64-3.10/numpy/distutils/tests
+            creating build/lib.linux-x86_64-3.10/numpy/doc
+            copying numpy/doc/ufuncs.py -> build/lib.linux-x86_64-3.10/numpy/doc
+            copying numpy/doc/broadcasting.py -> build/lib.linux-x86_64-3.10/numpy/doc
+            copying numpy/doc/dispatch.py -> build/lib.linux-x86_64-3.10/numpy/doc
+            copying numpy/doc/internals.py -> build/lib.linux-x86_64-3.10/numpy/doc
+            copying numpy/doc/indexing.py -> build/lib.linux-x86_64-3.10/numpy/doc
+            copying numpy/doc/basics.py -> build/lib.linux-x86_64-3.10/numpy/doc
+            copying numpy/doc/constants.py -> build/lib.linux-x86_64-3.10/numpy/doc
+            copying numpy/doc/creation.py -> build/lib.linux-x86_64-3.10/numpy/doc
+            copying numpy/doc/glossary.py -> build/lib.linux-x86_64-3.10/numpy/doc
+            copying numpy/doc/structured_arrays.py -> build/lib.linux-x86_64-3.10/numpy/doc
+            copying numpy/doc/misc.py -> build/lib.linux-x86_64-3.10/numpy/doc
+            copying numpy/doc/__init__.py -> build/lib.linux-x86_64-3.10/numpy/doc
+            copying numpy/doc/subclassing.py -> build/lib.linux-x86_64-3.10/numpy/doc
+            copying numpy/doc/byteswapping.py -> build/lib.linux-x86_64-3.10/numpy/doc
+            creating build/lib.linux-x86_64-3.10/numpy/f2py
+            copying numpy/f2py/f90mod_rules.py -> build/lib.linux-x86_64-3.10/numpy/f2py
+            copying numpy/f2py/auxfuncs.py -> build/lib.linux-x86_64-3.10/numpy/f2py
+            copying numpy/f2py/cb_rules.py -> build/lib.linux-x86_64-3.10/numpy/f2py
+            copying numpy/f2py/rules.py -> build/lib.linux-x86_64-3.10/numpy/f2py
+            copying numpy/f2py/__version__.py -> build/lib.linux-x86_64-3.10/numpy/f2py
+            copying numpy/f2py/f2py2e.py -> build/lib.linux-x86_64-3.10/numpy/f2py
+            copying numpy/f2py/cfuncs.py -> build/lib.linux-x86_64-3.10/numpy/f2py
+            copying numpy/f2py/use_rules.py -> build/lib.linux-x86_64-3.10/numpy/f2py
+            copying numpy/f2py/f2py_testing.py -> build/lib.linux-x86_64-3.10/numpy/f2py
+            copying numpy/f2py/__main__.py -> build/lib.linux-x86_64-3.10/numpy/f2py
+            copying numpy/f2py/capi_maps.py -> build/lib.linux-x86_64-3.10/numpy/f2py
+            copying numpy/f2py/crackfortran.py -> build/lib.linux-x86_64-3.10/numpy/f2py
+            copying numpy/f2py/diagnose.py -> build/lib.linux-x86_64-3.10/numpy/f2py
+            copying numpy/f2py/common_rules.py -> build/lib.linux-x86_64-3.10/numpy/f2py
+            copying numpy/f2py/func2subr.py -> build/lib.linux-x86_64-3.10/numpy/f2py
+            copying numpy/f2py/__init__.py -> build/lib.linux-x86_64-3.10/numpy/f2py
+            copying numpy/f2py/setup.py -> build/lib.linux-x86_64-3.10/numpy/f2py
+            creating build/lib.linux-x86_64-3.10/numpy/f2py/tests
+            copying numpy/f2py/tests/test_return_complex.py -> build/lib.linux-x86_64-3.10/numpy/f2py/tests
+            copying numpy/f2py/tests/test_regression.py -> build/lib.linux-x86_64-3.10/numpy/f2py/tests
+            copying numpy/f2py/tests/test_return_logical.py -> build/lib.linux-x86_64-3.10/numpy/f2py/tests
+            copying numpy/f2py/tests/test_block_docstring.py -> build/lib.linux-x86_64-3.10/numpy/f2py/tests
+            copying numpy/f2py/tests/util.py -> build/lib.linux-x86_64-3.10/numpy/f2py/tests
+            copying numpy/f2py/tests/test_compile_function.py -> build/lib.linux-x86_64-3.10/numpy/f2py/tests
+            copying numpy/f2py/tests/test_kind.py -> build/lib.linux-x86_64-3.10/numpy/f2py/tests
+            copying numpy/f2py/tests/test_quoted_character.py -> build/lib.linux-x86_64-3.10/numpy/f2py/tests
+            copying numpy/f2py/tests/test_return_character.py -> build/lib.linux-x86_64-3.10/numpy/f2py/tests
+            copying numpy/f2py/tests/test_return_real.py -> build/lib.linux-x86_64-3.10/numpy/f2py/tests
+            copying numpy/f2py/tests/test_mixed.py -> build/lib.linux-x86_64-3.10/numpy/f2py/tests
+            copying numpy/f2py/tests/test_parameter.py -> build/lib.linux-x86_64-3.10/numpy/f2py/tests
+            copying numpy/f2py/tests/test_common.py -> build/lib.linux-x86_64-3.10/numpy/f2py/tests
+            copying numpy/f2py/tests/test_crackfortran.py -> build/lib.linux-x86_64-3.10/numpy/f2py/tests
+            copying numpy/f2py/tests/test_string.py -> build/lib.linux-x86_64-3.10/numpy/f2py/tests
+            copying numpy/f2py/tests/test_array_from_pyobj.py -> build/lib.linux-x86_64-3.10/numpy/f2py/tests
+            copying numpy/f2py/tests/test_callback.py -> build/lib.linux-x86_64-3.10/numpy/f2py/tests
+            copying numpy/f2py/tests/test_return_integer.py -> build/lib.linux-x86_64-3.10/numpy/f2py/tests
+            copying numpy/f2py/tests/__init__.py -> build/lib.linux-x86_64-3.10/numpy/f2py/tests
+            copying numpy/f2py/tests/test_assumed_shape.py -> build/lib.linux-x86_64-3.10/numpy/f2py/tests
+            copying numpy/f2py/tests/test_semicolon_split.py -> build/lib.linux-x86_64-3.10/numpy/f2py/tests
+            copying numpy/f2py/tests/test_size.py -> build/lib.linux-x86_64-3.10/numpy/f2py/tests
+            creating build/lib.linux-x86_64-3.10/numpy/fft
+            copying numpy/fft/_pocketfft.py -> build/lib.linux-x86_64-3.10/numpy/fft
+            copying numpy/fft/helper.py -> build/lib.linux-x86_64-3.10/numpy/fft
+            copying numpy/fft/__init__.py -> build/lib.linux-x86_64-3.10/numpy/fft
+            copying numpy/fft/setup.py -> build/lib.linux-x86_64-3.10/numpy/fft
+            creating build/lib.linux-x86_64-3.10/numpy/fft/tests
+            copying numpy/fft/tests/test_helper.py -> build/lib.linux-x86_64-3.10/numpy/fft/tests
+            copying numpy/fft/tests/test_pocketfft.py -> build/lib.linux-x86_64-3.10/numpy/fft/tests
+            copying numpy/fft/tests/__init__.py -> build/lib.linux-x86_64-3.10/numpy/fft/tests
+            creating build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/shape_base.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/arrayterator.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/utils.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/_iotools.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/recfunctions.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/twodim_base.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/type_check.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/arraysetops.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/function_base.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/histograms.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/scimath.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/nanfunctions.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/user_array.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/polynomial.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/ufunclike.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/_datasource.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/arraypad.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/_version.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/npyio.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/index_tricks.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/__init__.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/format.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/mixins.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/setup.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/financial.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            copying numpy/lib/stride_tricks.py -> build/lib.linux-x86_64-3.10/numpy/lib
+            creating build/lib.linux-x86_64-3.10/numpy/lib/tests
+            copying numpy/lib/tests/test_regression.py -> build/lib.linux-x86_64-3.10/numpy/lib/tests
+            copying numpy/lib/tests/test__version.py -> build/lib.linux-x86_64-3.10/numpy/lib/tests
+            copying numpy/lib/tests/test_type_check.py -> build/lib.linux-x86_64-3.10/numpy/lib/tests
+            copying numpy/lib/tests/test_nanfunctions.py -> build/lib.linux-x86_64-3.10/numpy/lib/tests
+            copying numpy/lib/tests/test_recfunctions.py -> build/lib.linux-x86_64-3.10/numpy/lib/tests
+            copying numpy/lib/tests/test_arrayterator.py -> build/lib.linux-x86_64-3.10/numpy/lib/tests
+            copying numpy/lib/tests/test_histograms.py -> build/lib.linux-x86_64-3.10/numpy/lib/tests
+            copying numpy/lib/tests/test__iotools.py -> build/lib.linux-x86_64-3.10/numpy/lib/tests
+            copying numpy/lib/tests/test_ufunclike.py -> build/lib.linux-x86_64-3.10/numpy/lib/tests
+            copying numpy/lib/tests/test_index_tricks.py -> build/lib.linux-x86_64-3.10/numpy/lib/tests
+            copying numpy/lib/tests/test_format.py -> build/lib.linux-x86_64-3.10/numpy/lib/tests
+            copying numpy/lib/tests/test_twodim_base.py -> build/lib.linux-x86_64-3.10/numpy/lib/tests
+            copying numpy/lib/tests/test_function_base.py -> build/lib.linux-x86_64-3.10/numpy/lib/tests
+            copying numpy/lib/tests/test_mixins.py -> build/lib.linux-x86_64-3.10/numpy/lib/tests
+            copying numpy/lib/tests/test_arraysetops.py -> build/lib.linux-x86_64-3.10/numpy/lib/tests
+            copying numpy/lib/tests/test_arraypad.py -> build/lib.linux-x86_64-3.10/numpy/lib/tests
+            copying numpy/lib/tests/test_shape_base.py -> build/lib.linux-x86_64-3.10/numpy/lib/tests
+            copying numpy/lib/tests/test_stride_tricks.py -> build/lib.linux-x86_64-3.10/numpy/lib/tests
+            copying numpy/lib/tests/test_polynomial.py -> build/lib.linux-x86_64-3.10/numpy/lib/tests
+            copying numpy/lib/tests/test_io.py -> build/lib.linux-x86_64-3.10/numpy/lib/tests
+            copying numpy/lib/tests/test_utils.py -> build/lib.linux-x86_64-3.10/numpy/lib/tests
+            copying numpy/lib/tests/test_packbits.py -> build/lib.linux-x86_64-3.10/numpy/lib/tests
+            copying numpy/lib/tests/__init__.py -> build/lib.linux-x86_64-3.10/numpy/lib/tests
+            copying numpy/lib/tests/test_financial.py -> build/lib.linux-x86_64-3.10/numpy/lib/tests
+            copying numpy/lib/tests/test__datasource.py -> build/lib.linux-x86_64-3.10/numpy/lib/tests
+            creating build/lib.linux-x86_64-3.10/numpy/linalg
+            copying numpy/linalg/linalg.py -> build/lib.linux-x86_64-3.10/numpy/linalg
+            copying numpy/linalg/__init__.py -> build/lib.linux-x86_64-3.10/numpy/linalg
+            copying numpy/linalg/setup.py -> build/lib.linux-x86_64-3.10/numpy/linalg
+            creating build/lib.linux-x86_64-3.10/numpy/linalg/tests
+            copying numpy/linalg/tests/test_regression.py -> build/lib.linux-x86_64-3.10/numpy/linalg/tests
+            copying numpy/linalg/tests/test_deprecations.py -> build/lib.linux-x86_64-3.10/numpy/linalg/tests
+            copying numpy/linalg/tests/test_build.py -> build/lib.linux-x86_64-3.10/numpy/linalg/tests
+            copying numpy/linalg/tests/test_linalg.py -> build/lib.linux-x86_64-3.10/numpy/linalg/tests
+            copying numpy/linalg/tests/__init__.py -> build/lib.linux-x86_64-3.10/numpy/linalg/tests
+            creating build/lib.linux-x86_64-3.10/numpy/ma
+            copying numpy/ma/bench.py -> build/lib.linux-x86_64-3.10/numpy/ma
+            copying numpy/ma/testutils.py -> build/lib.linux-x86_64-3.10/numpy/ma
+            copying numpy/ma/extras.py -> build/lib.linux-x86_64-3.10/numpy/ma
+            copying numpy/ma/mrecords.py -> build/lib.linux-x86_64-3.10/numpy/ma
+            copying numpy/ma/__init__.py -> build/lib.linux-x86_64-3.10/numpy/ma
+            copying numpy/ma/timer_comparison.py -> build/lib.linux-x86_64-3.10/numpy/ma
+            copying numpy/ma/setup.py -> build/lib.linux-x86_64-3.10/numpy/ma
+            copying numpy/ma/core.py -> build/lib.linux-x86_64-3.10/numpy/ma
+            creating build/lib.linux-x86_64-3.10/numpy/ma/tests
+            copying numpy/ma/tests/test_regression.py -> build/lib.linux-x86_64-3.10/numpy/ma/tests
+            copying numpy/ma/tests/test_core.py -> build/lib.linux-x86_64-3.10/numpy/ma/tests
+            copying numpy/ma/tests/test_subclassing.py -> build/lib.linux-x86_64-3.10/numpy/ma/tests
+            copying numpy/ma/tests/test_deprecations.py -> build/lib.linux-x86_64-3.10/numpy/ma/tests
+            copying numpy/ma/tests/test_extras.py -> build/lib.linux-x86_64-3.10/numpy/ma/tests
+            copying numpy/ma/tests/test_mrecords.py -> build/lib.linux-x86_64-3.10/numpy/ma/tests
+            copying numpy/ma/tests/__init__.py -> build/lib.linux-x86_64-3.10/numpy/ma/tests
+            copying numpy/ma/tests/test_old_ma.py -> build/lib.linux-x86_64-3.10/numpy/ma/tests
+            creating build/lib.linux-x86_64-3.10/numpy/matrixlib
+            copying numpy/matrixlib/defmatrix.py -> build/lib.linux-x86_64-3.10/numpy/matrixlib
+            copying numpy/matrixlib/__init__.py -> build/lib.linux-x86_64-3.10/numpy/matrixlib
+            copying numpy/matrixlib/setup.py -> build/lib.linux-x86_64-3.10/numpy/matrixlib
+            creating build/lib.linux-x86_64-3.10/numpy/matrixlib/tests
+            copying numpy/matrixlib/tests/test_masked_matrix.py -> build/lib.linux-x86_64-3.10/numpy/matrixlib/tests
+            copying numpy/matrixlib/tests/test_regression.py -> build/lib.linux-x86_64-3.10/numpy/matrixlib/tests
+            copying numpy/matrixlib/tests/test_numeric.py -> build/lib.linux-x86_64-3.10/numpy/matrixlib/tests
+            copying numpy/matrixlib/tests/test_multiarray.py -> build/lib.linux-x86_64-3.10/numpy/matrixlib/tests
+            copying numpy/matrixlib/tests/test_matrix_linalg.py -> build/lib.linux-x86_64-3.10/numpy/matrixlib/tests
+            copying numpy/matrixlib/tests/test_defmatrix.py -> build/lib.linux-x86_64-3.10/numpy/matrixlib/tests
+            copying numpy/matrixlib/tests/test_interaction.py -> build/lib.linux-x86_64-3.10/numpy/matrixlib/tests
+            copying numpy/matrixlib/tests/__init__.py -> build/lib.linux-x86_64-3.10/numpy/matrixlib/tests
+            creating build/lib.linux-x86_64-3.10/numpy/polynomial
+            copying numpy/polynomial/polyutils.py -> build/lib.linux-x86_64-3.10/numpy/polynomial
+            copying numpy/polynomial/chebyshev.py -> build/lib.linux-x86_64-3.10/numpy/polynomial
+            copying numpy/polynomial/laguerre.py -> build/lib.linux-x86_64-3.10/numpy/polynomial
+            copying numpy/polynomial/hermite_e.py -> build/lib.linux-x86_64-3.10/numpy/polynomial
+            copying numpy/polynomial/_polybase.py -> build/lib.linux-x86_64-3.10/numpy/polynomial
+            copying numpy/polynomial/legendre.py -> build/lib.linux-x86_64-3.10/numpy/polynomial
+            copying numpy/polynomial/polynomial.py -> build/lib.linux-x86_64-3.10/numpy/polynomial
+            copying numpy/polynomial/__init__.py -> build/lib.linux-x86_64-3.10/numpy/polynomial
+            copying numpy/polynomial/setup.py -> build/lib.linux-x86_64-3.10/numpy/polynomial
+            copying numpy/polynomial/hermite.py -> build/lib.linux-x86_64-3.10/numpy/polynomial
+            creating build/lib.linux-x86_64-3.10/numpy/polynomial/tests
+            copying numpy/polynomial/tests/test_legendre.py -> build/lib.linux-x86_64-3.10/numpy/polynomial/tests
+            copying numpy/polynomial/tests/test_hermite.py -> build/lib.linux-x86_64-3.10/numpy/polynomial/tests
+            copying numpy/polynomial/tests/test_hermite_e.py -> build/lib.linux-x86_64-3.10/numpy/polynomial/tests
+            copying numpy/polynomial/tests/test_laguerre.py -> build/lib.linux-x86_64-3.10/numpy/polynomial/tests
+            copying numpy/polynomial/tests/test_chebyshev.py -> build/lib.linux-x86_64-3.10/numpy/polynomial/tests
+            copying numpy/polynomial/tests/test_printing.py -> build/lib.linux-x86_64-3.10/numpy/polynomial/tests
+            copying numpy/polynomial/tests/test_polyutils.py -> build/lib.linux-x86_64-3.10/numpy/polynomial/tests
+            copying numpy/polynomial/tests/test_polynomial.py -> build/lib.linux-x86_64-3.10/numpy/polynomial/tests
+            copying numpy/polynomial/tests/__init__.py -> build/lib.linux-x86_64-3.10/numpy/polynomial/tests
+            copying numpy/polynomial/tests/test_classes.py -> build/lib.linux-x86_64-3.10/numpy/polynomial/tests
+            creating build/lib.linux-x86_64-3.10/numpy/random
+            copying numpy/random/_pickle.py -> build/lib.linux-x86_64-3.10/numpy/random
+            copying numpy/random/__init__.py -> build/lib.linux-x86_64-3.10/numpy/random
+            copying numpy/random/setup.py -> build/lib.linux-x86_64-3.10/numpy/random
+            creating build/lib.linux-x86_64-3.10/numpy/random/tests
+            copying numpy/random/tests/test_seed_sequence.py -> build/lib.linux-x86_64-3.10/numpy/random/tests
+            copying numpy/random/tests/test_regression.py -> build/lib.linux-x86_64-3.10/numpy/random/tests
+            copying numpy/random/tests/test_direct.py -> build/lib.linux-x86_64-3.10/numpy/random/tests
+            copying numpy/random/tests/test_extending.py -> build/lib.linux-x86_64-3.10/numpy/random/tests
+            copying numpy/random/tests/test_randomstate.py -> build/lib.linux-x86_64-3.10/numpy/random/tests
+            copying numpy/random/tests/test_generator_mt19937_regressions.py -> build/lib.linux-x86_64-3.10/numpy/random/tests
+            copying numpy/random/tests/test_smoke.py -> build/lib.linux-x86_64-3.10/numpy/random/tests
+            copying numpy/random/tests/test_randomstate_regression.py -> build/lib.linux-x86_64-3.10/numpy/random/tests
+            copying numpy/random/tests/__init__.py -> build/lib.linux-x86_64-3.10/numpy/random/tests
+            copying numpy/random/tests/test_random.py -> build/lib.linux-x86_64-3.10/numpy/random/tests
+            copying numpy/random/tests/test_generator_mt19937.py -> build/lib.linux-x86_64-3.10/numpy/random/tests
+            creating build/lib.linux-x86_64-3.10/numpy/testing
+            copying numpy/testing/utils.py -> build/lib.linux-x86_64-3.10/numpy/testing
+            copying numpy/testing/print_coercion_tables.py -> build/lib.linux-x86_64-3.10/numpy/testing
+            copying numpy/testing/__init__.py -> build/lib.linux-x86_64-3.10/numpy/testing
+            copying numpy/testing/setup.py -> build/lib.linux-x86_64-3.10/numpy/testing
+            creating build/lib.linux-x86_64-3.10/numpy/testing/_private
+            copying numpy/testing/_private/noseclasses.py -> build/lib.linux-x86_64-3.10/numpy/testing/_private
+            copying numpy/testing/_private/utils.py -> build/lib.linux-x86_64-3.10/numpy/testing/_private
+            copying numpy/testing/_private/nosetester.py -> build/lib.linux-x86_64-3.10/numpy/testing/_private
+            copying numpy/testing/_private/parameterized.py -> build/lib.linux-x86_64-3.10/numpy/testing/_private
+            copying numpy/testing/_private/decorators.py -> build/lib.linux-x86_64-3.10/numpy/testing/_private
+            copying numpy/testing/_private/__init__.py -> build/lib.linux-x86_64-3.10/numpy/testing/_private
+            creating build/lib.linux-x86_64-3.10/numpy/testing/tests
+            copying numpy/testing/tests/test_doctesting.py -> build/lib.linux-x86_64-3.10/numpy/testing/tests
+            copying numpy/testing/tests/test_utils.py -> build/lib.linux-x86_64-3.10/numpy/testing/tests
+            copying numpy/testing/tests/__init__.py -> build/lib.linux-x86_64-3.10/numpy/testing/tests
+            copying numpy/testing/tests/test_decorators.py -> build/lib.linux-x86_64-3.10/numpy/testing/tests
+            creating build/lib.linux-x86_64-3.10/numpy/tests
+            copying numpy/tests/test_reloading.py -> build/lib.linux-x86_64-3.10/numpy/tests
+            copying numpy/tests/test_numpy_version.py -> build/lib.linux-x86_64-3.10/numpy/tests
+            copying numpy/tests/test_public_api.py -> build/lib.linux-x86_64-3.10/numpy/tests
+            copying numpy/tests/test_ctypeslib.py -> build/lib.linux-x86_64-3.10/numpy/tests
+            copying numpy/tests/test_matlib.py -> build/lib.linux-x86_64-3.10/numpy/tests
+            copying numpy/tests/test_warnings.py -> build/lib.linux-x86_64-3.10/numpy/tests
+            copying numpy/tests/__init__.py -> build/lib.linux-x86_64-3.10/numpy/tests
+            copying numpy/tests/test_scripts.py -> build/lib.linux-x86_64-3.10/numpy/tests
+            running build_clib
+            customize UnixCCompiler
+            customize UnixCCompiler using new_build_clib
+            building 'npymath' library
+            compiling C sources
+            C compiler: x86_64-linux-gnu-gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC
+      
+            creating build/temp.linux-x86_64-3.10
+            creating build/temp.linux-x86_64-3.10/numpy
+            creating build/temp.linux-x86_64-3.10/numpy/core
+            creating build/temp.linux-x86_64-3.10/numpy/core/src
+            creating build/temp.linux-x86_64-3.10/numpy/core/src/npymath
+            creating build/temp.linux-x86_64-3.10/build
+            creating build/temp.linux-x86_64-3.10/build/src.linux-x86_64-3.10
+            creating build/temp.linux-x86_64-3.10/build/src.linux-x86_64-3.10/numpy
+            creating build/temp.linux-x86_64-3.10/build/src.linux-x86_64-3.10/numpy/core
+            creating build/temp.linux-x86_64-3.10/build/src.linux-x86_64-3.10/numpy/core/src
+            creating build/temp.linux-x86_64-3.10/build/src.linux-x86_64-3.10/numpy/core/src/npymath
+            compile options: '-Ibuild/src.linux-x86_64-3.10/numpy/core/src/npymath -Inumpy/core/include -Ibuild/src.linux-x86_64-3.10/numpy/core/include/numpy -Inumpy/core/src/common -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/vm/Documents/QiskitLearningCourse/include -I/usr/include/python3.10 -Ibuild/src.linux-x86_64-3.10/numpy/core/src/common -Ibuild/src.linux-x86_64-3.10/numpy/core/src/npymath -c'
+            extra options: '-std=c99'
+            x86_64-linux-gnu-gcc: numpy/core/src/npymath/npy_math.c
+            x86_64-linux-gnu-gcc: build/src.linux-x86_64-3.10/numpy/core/src/npymath/ieee754.c
+            x86_64-linux-gnu-gcc: build/src.linux-x86_64-3.10/numpy/core/src/npymath/npy_math_complex.c
+            x86_64-linux-gnu-gcc: numpy/core/src/npymath/halffloat.c
+            x86_64-linux-gnu-gcc-ar: adding 4 object files to build/temp.linux-x86_64-3.10/libnpymath.a
+            building 'npysort' library
+            compiling C sources
+            C compiler: x86_64-linux-gnu-gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC
+      
+            creating build/temp.linux-x86_64-3.10/build/src.linux-x86_64-3.10/numpy/core/src/npysort
+            compile options: '-Ibuild/src.linux-x86_64-3.10/numpy/core/src/common -Inumpy/core/include -Ibuild/src.linux-x86_64-3.10/numpy/core/include/numpy -Inumpy/core/src/common -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/vm/Documents/QiskitLearningCourse/include -I/usr/include/python3.10 -Ibuild/src.linux-x86_64-3.10/numpy/core/src/common -Ibuild/src.linux-x86_64-3.10/numpy/core/src/npymath -c'
+            extra options: '-std=c99'
+            x86_64-linux-gnu-gcc: build/src.linux-x86_64-3.10/numpy/core/src/npysort/quicksort.c
+            x86_64-linux-gnu-gcc: build/src.linux-x86_64-3.10/numpy/core/src/npysort/mergesort.c
+            x86_64-linux-gnu-gcc: build/src.linux-x86_64-3.10/numpy/core/src/npysort/timsort.c
+            x86_64-linux-gnu-gcc: build/src.linux-x86_64-3.10/numpy/core/src/npysort/heapsort.c
+            x86_64-linux-gnu-gcc: build/src.linux-x86_64-3.10/numpy/core/src/npysort/radixsort.c
+            x86_64-linux-gnu-gcc: build/src.linux-x86_64-3.10/numpy/core/src/npysort/selection.c
+            x86_64-linux-gnu-gcc: build/src.linux-x86_64-3.10/numpy/core/src/npysort/binsearch.c
+            x86_64-linux-gnu-gcc-ar: adding 7 object files to build/temp.linux-x86_64-3.10/libnpysort.a
+            building 'npyrandom' library
+            compiling C sources
+            C compiler: x86_64-linux-gnu-gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC
+      
+            creating build/temp.linux-x86_64-3.10/numpy/random
+            creating build/temp.linux-x86_64-3.10/numpy/random/src
+            creating build/temp.linux-x86_64-3.10/numpy/random/src/distributions
+            compile options: '-Inumpy/core/include -Ibuild/src.linux-x86_64-3.10/numpy/core/include/numpy -Inumpy/core/src/common -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/vm/Documents/QiskitLearningCourse/include -I/usr/include/python3.10 -Ibuild/src.linux-x86_64-3.10/numpy/core/src/common -Ibuild/src.linux-x86_64-3.10/numpy/core/src/npymath -c'
+            extra options: '-std=c99'
+            x86_64-linux-gnu-gcc: numpy/random/src/distributions/logfactorial.c
+            x86_64-linux-gnu-gcc: numpy/random/src/distributions/distributions.c
+            x86_64-linux-gnu-gcc: numpy/random/src/distributions/random_mvhg_count.c
+            x86_64-linux-gnu-gcc: numpy/random/src/distributions/random_mvhg_marginals.c
+            x86_64-linux-gnu-gcc: numpy/random/src/distributions/random_hypergeometric.c
+            x86_64-linux-gnu-gcc-ar: adding 5 object files to build/temp.linux-x86_64-3.10/libnpyrandom.a
+            running build_ext
+            customize UnixCCompiler
+            customize UnixCCompiler using new_build_ext
+            building 'numpy.core._multiarray_tests' extension
+            compiling C sources
+            C compiler: x86_64-linux-gnu-gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC
+      
+            creating build/temp.linux-x86_64-3.10/build/src.linux-x86_64-3.10/numpy/core/src/multiarray
+            creating build/temp.linux-x86_64-3.10/numpy/core/src/common
+            compile options: '-DNPY_INTERNAL_BUILD=1 -DHAVE_NPY_CONFIG_H=1 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -Inumpy/core/include -Ibuild/src.linux-x86_64-3.10/numpy/core/include/numpy -Inumpy/core/src/common -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/vm/Documents/QiskitLearningCourse/include -I/usr/include/python3.10 -Ibuild/src.linux-x86_64-3.10/numpy/core/src/common -Ibuild/src.linux-x86_64-3.10/numpy/core/src/npymath -c'
+            extra options: '-std=c99'
+            x86_64-linux-gnu-gcc: build/src.linux-x86_64-3.10/numpy/core/src/multiarray/_multiarray_tests.c
+            x86_64-linux-gnu-gcc: numpy/core/src/common/mem_overlap.c
+            x86_64-linux-gnu-gcc -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -g -fwrapv -O2 -Wl,-Bsymbolic-functions -g -fwrapv -O2 -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-x86_64-3.10/build/src.linux-x86_64-3.10/numpy/core/src/multiarray/_multiarray_tests.o build/temp.linux-x86_64-3.10/numpy/core/src/common/mem_overlap.o -Lbuild/temp.linux-x86_64-3.10 -lnpymath -o build/lib.linux-x86_64-3.10/numpy/core/_multiarray_tests.cpython-310-x86_64-linux-gnu.so
+            building 'numpy.core._multiarray_umath' extension
+            compiling C sources
+            C compiler: x86_64-linux-gnu-gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC
+      
+            creating build/temp.linux-x86_64-3.10/numpy/core/src/multiarray
+            creating build/temp.linux-x86_64-3.10/numpy/core/src/umath
+            creating build/temp.linux-x86_64-3.10/build/src.linux-x86_64-3.10/numpy/core/src/umath
+            creating build/temp.linux-x86_64-3.10/build/src.linux-x86_64-3.10/numpy/core/src/common
+            compile options: '-DNPY_INTERNAL_BUILD=1 -DHAVE_NPY_CONFIG_H=1 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -DHAVE_CBLAS -Ibuild/src.linux-x86_64-3.10/numpy/core/src/umath -Ibuild/src.linux-x86_64-3.10/numpy/core/src/npymath -Ibuild/src.linux-x86_64-3.10/numpy/core/src/common -Inumpy/core/include -Ibuild/src.linux-x86_64-3.10/numpy/core/include/numpy -Inumpy/core/src/common -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/vm/Documents/QiskitLearningCourse/include -I/usr/include/python3.10 -Ibuild/src.linux-x86_64-3.10/numpy/core/src/common -Ibuild/src.linux-x86_64-3.10/numpy/core/src/npymath -c'
+            extra options: '-std=c99'
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/alloc.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/common.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/arrayobject.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/convert.c
+            x86_64-linux-gnu-gcc: build/src.linux-x86_64-3.10/numpy/core/src/multiarray/arraytypes.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/convert_datatype.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/conversion_utils.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/ctors.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/datetime.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/datetime_strings.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/datetime_busday.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/datetime_busdaycal.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/descriptor.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/dragon4.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/array_assign_scalar.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/dtype_transfer.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/array_assign_array.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/arrayfunction_override.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/buffer.c
+            x86_64-linux-gnu-gcc: build/src.linux-x86_64-3.10/numpy/core/src/multiarray/einsum.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/calculation.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/compiled_base.c
+            x86_64-linux-gnu-gcc: build/src.linux-x86_64-3.10/numpy/core/src/multiarray/lowlevel_strided_loops.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/flagsobject.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/getset.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/hashdescr.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/item_selection.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/iterators.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/refcount.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/sequence.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/shape.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/scalarapi.c
+            x86_64-linux-gnu-gcc: build/src.linux-x86_64-3.10/numpy/core/src/multiarray/scalartypes.c
+            numpy/core/src/multiarray/scalartypes.c.src: In function ‘float_arrtype_hash’:
+            numpy/core/src/multiarray/scalartypes.c.src:2967:27: error: incompatible type for argument 1 of ‘_Py_HashDouble’
+             2967 |     return _Py_HashDouble((double) PyArrayScalar_VAL(obj, @name@));
+            In file included from /usr/include/python3.10/Python.h:77,
+                             from numpy/core/src/multiarray/scalartypes.c.src:3:
+            /usr/include/python3.10/pyhash.h:10:38: note: expected ‘PyObject *’ {aka ‘struct _object *’} but argument is of type ‘double’
+               10 | PyAPI_FUNC(Py_hash_t) _Py_HashDouble(PyObject *, double);
+                  |                                      ^~~~~~~~~~
+            numpy/core/src/multiarray/scalartypes.c.src:2967:12: error: too few arguments to function ‘_Py_HashDouble’
+             2967 |     return _Py_HashDouble((double) PyArrayScalar_VAL(obj, @name@));
+                  |            ^~~~~~~~~~~~~~
+            In file included from /usr/include/python3.10/Python.h:77,
+                             from numpy/core/src/multiarray/scalartypes.c.src:3:
+            /usr/include/python3.10/pyhash.h:10:23: note: declared here
+               10 | PyAPI_FUNC(Py_hash_t) _Py_HashDouble(PyObject *, double);
+                  |                       ^~~~~~~~~~~~~~
+            numpy/core/src/multiarray/scalartypes.c.src: In function ‘cfloat_arrtype_hash’:
+            numpy/core/src/multiarray/scalartypes.c.src:2975:31: error: incompatible type for argument 1 of ‘_Py_HashDouble’
+             2975 |     hashreal = _Py_HashDouble((double)
+                  |                               ^~~~~~~~
+                  |                               |
+                  |                               double
+             2976 |             PyArrayScalar_VAL(obj, C@name@).real);
+                  |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            In file included from /usr/include/python3.10/Python.h:77,
+                             from numpy/core/src/multiarray/scalartypes.c.src:3:
+            /usr/include/python3.10/pyhash.h:10:38: note: expected ‘PyObject *’ {aka ‘struct _object *’} but argument is of type ‘double’
+               10 | PyAPI_FUNC(Py_hash_t) _Py_HashDouble(PyObject *, double);
+                  |                                      ^~~~~~~~~~
+            numpy/core/src/multiarray/scalartypes.c.src:2975:16: error: too few arguments to function ‘_Py_HashDouble’
+             2975 |     hashreal = _Py_HashDouble((double)
+                  |                ^~~~~~~~~~~~~~
+            In file included from /usr/include/python3.10/Python.h:77,
+                             from numpy/core/src/multiarray/scalartypes.c.src:3:
+            /usr/include/python3.10/pyhash.h:10:23: note: declared here
+               10 | PyAPI_FUNC(Py_hash_t) _Py_HashDouble(PyObject *, double);
+                  |                       ^~~~~~~~~~~~~~
+            numpy/core/src/multiarray/scalartypes.c.src:2981:31: error: incompatible type for argument 1 of ‘_Py_HashDouble’
+             2981 |     hashimag = _Py_HashDouble((double)
+                  |                               ^~~~~~~~
+                  |                               |
+                  |                               double
+             2982 |             PyArrayScalar_VAL(obj, C@name@).imag);
+                  |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            In file included from /usr/include/python3.10/Python.h:77,
+                             from numpy/core/src/multiarray/scalartypes.c.src:3:
+            /usr/include/python3.10/pyhash.h:10:38: note: expected ‘PyObject *’ {aka ‘struct _object *’} but argument is of type ‘double’
+               10 | PyAPI_FUNC(Py_hash_t) _Py_HashDouble(PyObject *, double);
+                  |                                      ^~~~~~~~~~
+            numpy/core/src/multiarray/scalartypes.c.src:2981:16: error: too few arguments to function ‘_Py_HashDouble’
+             2981 |     hashimag = _Py_HashDouble((double)
+                  |                ^~~~~~~~~~~~~~
+            In file included from /usr/include/python3.10/Python.h:77,
+                             from numpy/core/src/multiarray/scalartypes.c.src:3:
+            /usr/include/python3.10/pyhash.h:10:23: note: declared here
+               10 | PyAPI_FUNC(Py_hash_t) _Py_HashDouble(PyObject *, double);
+                  |                       ^~~~~~~~~~~~~~
+            numpy/core/src/multiarray/scalartypes.c.src: In function ‘longdouble_arrtype_hash’:
+            numpy/core/src/multiarray/scalartypes.c.src:2967:27: error: incompatible type for argument 1 of ‘_Py_HashDouble’
+             2967 |     return _Py_HashDouble((double) PyArrayScalar_VAL(obj, @name@));
+            In file included from /usr/include/python3.10/Python.h:77,
+                             from numpy/core/src/multiarray/scalartypes.c.src:3:
+            /usr/include/python3.10/pyhash.h:10:38: note: expected ‘PyObject *’ {aka ‘struct _object *’} but argument is of type ‘double’
+               10 | PyAPI_FUNC(Py_hash_t) _Py_HashDouble(PyObject *, double);
+                  |                                      ^~~~~~~~~~
+            numpy/core/src/multiarray/scalartypes.c.src:2967:12: error: too few arguments to function ‘_Py_HashDouble’
+             2967 |     return _Py_HashDouble((double) PyArrayScalar_VAL(obj, @name@));
+                  |            ^~~~~~~~~~~~~~
+            In file included from /usr/include/python3.10/Python.h:77,
+                             from numpy/core/src/multiarray/scalartypes.c.src:3:
+            /usr/include/python3.10/pyhash.h:10:23: note: declared here
+               10 | PyAPI_FUNC(Py_hash_t) _Py_HashDouble(PyObject *, double);
+                  |                       ^~~~~~~~~~~~~~
+            numpy/core/src/multiarray/scalartypes.c.src: In function ‘clongdouble_arrtype_hash’:
+            numpy/core/src/multiarray/scalartypes.c.src:2975:31: error: incompatible type for argument 1 of ‘_Py_HashDouble’
+             2975 |     hashreal = _Py_HashDouble((double)
+                  |                               ^~~~~~~~
+                  |                               |
+                  |                               double
+             2976 |             PyArrayScalar_VAL(obj, C@name@).real);
+                  |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            In file included from /usr/include/python3.10/Python.h:77,
+                             from numpy/core/src/multiarray/scalartypes.c.src:3:
+            /usr/include/python3.10/pyhash.h:10:38: note: expected ‘PyObject *’ {aka ‘struct _object *’} but argument is of type ‘double’
+               10 | PyAPI_FUNC(Py_hash_t) _Py_HashDouble(PyObject *, double);
+                  |                                      ^~~~~~~~~~
+            numpy/core/src/multiarray/scalartypes.c.src:2975:16: error: too few arguments to function ‘_Py_HashDouble’
+             2975 |     hashreal = _Py_HashDouble((double)
+                  |                ^~~~~~~~~~~~~~
+            In file included from /usr/include/python3.10/Python.h:77,
+                             from numpy/core/src/multiarray/scalartypes.c.src:3:
+            /usr/include/python3.10/pyhash.h:10:23: note: declared here
+               10 | PyAPI_FUNC(Py_hash_t) _Py_HashDouble(PyObject *, double);
+                  |                       ^~~~~~~~~~~~~~
+            numpy/core/src/multiarray/scalartypes.c.src:2981:31: error: incompatible type for argument 1 of ‘_Py_HashDouble’
+             2981 |     hashimag = _Py_HashDouble((double)
+                  |                               ^~~~~~~~
+                  |                               |
+                  |                               double
+             2982 |             PyArrayScalar_VAL(obj, C@name@).imag);
+                  |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            In file included from /usr/include/python3.10/Python.h:77,
+                             from numpy/core/src/multiarray/scalartypes.c.src:3:
+            /usr/include/python3.10/pyhash.h:10:38: note: expected ‘PyObject *’ {aka ‘struct _object *’} but argument is of type ‘double’
+               10 | PyAPI_FUNC(Py_hash_t) _Py_HashDouble(PyObject *, double);
+                  |                                      ^~~~~~~~~~
+            numpy/core/src/multiarray/scalartypes.c.src:2981:16: error: too few arguments to function ‘_Py_HashDouble’
+             2981 |     hashimag = _Py_HashDouble((double)
+                  |                ^~~~~~~~~~~~~~
+            In file included from /usr/include/python3.10/Python.h:77,
+                             from numpy/core/src/multiarray/scalartypes.c.src:3:
+            /usr/include/python3.10/pyhash.h:10:23: note: declared here
+               10 | PyAPI_FUNC(Py_hash_t) _Py_HashDouble(PyObject *, double);
+                  |                       ^~~~~~~~~~~~~~
+            numpy/core/src/multiarray/scalartypes.c.src: In function ‘half_arrtype_hash’:
+            numpy/core/src/multiarray/scalartypes.c.src:2997:27: error: incompatible type for argument 1 of ‘_Py_HashDouble’
+             2997 |     return _Py_HashDouble(npy_half_to_double(PyArrayScalar_VAL(obj, Half)));
+                  |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                  |                           |
+                  |                           double
+            In file included from /usr/include/python3.10/Python.h:77,
+                             from numpy/core/src/multiarray/scalartypes.c.src:3:
+            /usr/include/python3.10/pyhash.h:10:38: note: expected ‘PyObject *’ {aka ‘struct _object *’} but argument is of type ‘double’
+               10 | PyAPI_FUNC(Py_hash_t) _Py_HashDouble(PyObject *, double);
+                  |                                      ^~~~~~~~~~
+            numpy/core/src/multiarray/scalartypes.c.src:2997:12: error: too few arguments to function ‘_Py_HashDouble’
+             2997 |     return _Py_HashDouble(npy_half_to_double(PyArrayScalar_VAL(obj, Half)));
+                  |            ^~~~~~~~~~~~~~
+            In file included from /usr/include/python3.10/Python.h:77,
+                             from numpy/core/src/multiarray/scalartypes.c.src:3:
+            /usr/include/python3.10/pyhash.h:10:23: note: declared here
+               10 | PyAPI_FUNC(Py_hash_t) _Py_HashDouble(PyObject *, double);
+                  |                       ^~~~~~~~~~~~~~
+            numpy/core/src/multiarray/scalartypes.c.src: In function ‘longdouble_arrtype_hash’:
+            numpy/core/src/multiarray/scalartypes.c.src:2968:1: warning: control reaches end of non-void function [-Wreturn-type]
+             2968 | }
+                  | ^
+            numpy/core/src/multiarray/scalartypes.c.src: In function ‘float_arrtype_hash’:
+            numpy/core/src/multiarray/scalartypes.c.src:2968:1: warning: control reaches end of non-void function [-Wreturn-type]
+             2968 | }
+                  | ^
+            numpy/core/src/multiarray/scalartypes.c.src: In function ‘half_arrtype_hash’:
+            numpy/core/src/multiarray/scalartypes.c.src:2998:1: warning: control reaches end of non-void function [-Wreturn-type]
+             2998 | }
+                  | ^
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/vdot.c
+            x86_64-linux-gnu-gcc: numpy/core/src/umath/umathmodule.c
+            x86_64-linux-gnu-gcc: numpy/core/src/umath/reduction.c
+            x86_64-linux-gnu-gcc: build/src.linux-x86_64-3.10/numpy/core/src/umath/loops.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/mapping.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/methods.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/multiarraymodule.c
+            x86_64-linux-gnu-gcc: build/src.linux-x86_64-3.10/numpy/core/src/multiarray/nditer_templ.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/nditer_api.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/nditer_constr.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/nditer_pywrap.c
+            x86_64-linux-gnu-gcc: numpy/core/src/multiarray/number.c
+            x86_64-linux-gnu-gcc: numpy/core/src/umath/ufunc_type_resolution.c
+            x86_64-linux-gnu-gcc: numpy/core/src/umath/override.c
+            x86_64-linux-gnu-gcc: numpy/core/src/npymath/npy_math.c
+            x86_64-linux-gnu-gcc: build/src.linux-x86_64-3.10/numpy/core/src/npymath/ieee754.c
+            x86_64-linux-gnu-gcc: build/src.linux-x86_64-3.10/numpy/core/src/npymath/npy_math_complex.c
+            x86_64-linux-gnu-gcc: numpy/core/src/npymath/halffloat.c
+            x86_64-linux-gnu-gcc: numpy/core/src/common/array_assign.c
+            x86_64-linux-gnu-gcc: numpy/core/src/common/mem_overlap.c
+            x86_64-linux-gnu-gcc: numpy/core/src/common/npy_longdouble.c
+            x86_64-linux-gnu-gcc: numpy/core/src/common/ucsnarrow.c
+            x86_64-linux-gnu-gcc: numpy/core/src/common/ufunc_override.c
+            x86_64-linux-gnu-gcc: numpy/core/src/common/numpyos.c
+            x86_64-linux-gnu-gcc: build/src.linux-x86_64-3.10/numpy/core/src/common/npy_cpu_features.c
+            x86_64-linux-gnu-gcc: numpy/core/src/common/cblasfuncs.c
+            x86_64-linux-gnu-gcc: numpy/core/src/common/python_xerbla.c
+            x86_64-linux-gnu-gcc: build/src.linux-x86_64-3.10/numpy/core/src/umath/matmul.c
+            x86_64-linux-gnu-gcc: build/src.linux-x86_64-3.10/numpy/core/src/umath/clip.c
+            x86_64-linux-gnu-gcc: numpy/core/src/umath/ufunc_object.c
+            x86_64-linux-gnu-gcc: numpy/core/src/umath/extobj.c
+            x86_64-linux-gnu-gcc: build/src.linux-x86_64-3.10/numpy/core/src/umath/scalarmath.c
+            error: Command "x86_64-linux-gnu-gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -DNPY_INTERNAL_BUILD=1 -DHAVE_NPY_CONFIG_H=1 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -DHAVE_CBLAS -Ibuild/src.linux-x86_64-3.10/numpy/core/src/umath -Ibuild/src.linux-x86_64-3.10/numpy/core/src/npymath -Ibuild/src.linux-x86_64-3.10/numpy/core/src/common -Inumpy/core/include -Ibuild/src.linux-x86_64-3.10/numpy/core/include/numpy -Inumpy/core/src/common -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/vm/Documents/QiskitLearningCourse/include -I/usr/include/python3.10 -Ibuild/src.linux-x86_64-3.10/numpy/core/src/common -Ibuild/src.linux-x86_64-3.10/numpy/core/src/npymath -c build/src.linux-x86_64-3.10/numpy/core/src/multiarray/scalartypes.c -o build/temp.linux-x86_64-3.10/build/src.linux-x86_64-3.10/numpy/core/src/multiarray/scalartypes.o -MMD -MF build/temp.linux-x86_64-3.10/build/src.linux-x86_64-3.10/numpy/core/src/multiarray/scalartypes.o.d -std=c99" failed with exit status 1
+            [end of output]
+      
+        note: This error originates from a subprocess, and is likely not a problem with pip.
+        ERROR: Failed building wheel for numpy
+      Failed to build numpy
+      ERROR: Could not build wheels for numpy, which is required to install pyproject.toml-based projects
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+× pip subprocess to install backend dependencies did not run successfully.
+│ exit code: 1
+╰─> See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
+
+error - PackageManager: Package [object Object] do not installed
+info - Object: Go to install qiskit-aqua
+verbose - Object: Deactivating Qiskit extension ...
