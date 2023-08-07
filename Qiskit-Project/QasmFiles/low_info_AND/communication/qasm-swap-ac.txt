@@ -1,0 +1,11 @@
+OPENQASM 2.0;
+include "qelib1.inc";
+
+gate swap a,b { cx a,b; cx b,a; cx a,b; }
+
+
+qreg q[7];
+
+swap q[0],q[2];
+
+barrier q;

@@ -1,0 +1,11 @@
+openqasm3
+jstyleson
+qiskit-qasm3-import
+qiskit
+qiskit-ibm-runtime
+qiskit_ibm_provider
+matplotlib
+numpy
+pylatexenc
+qiskit-qasm2
+qiskit-aer
