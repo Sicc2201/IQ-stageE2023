@@ -1,0 +1,37 @@
+{
+    "backend": "ibm_perth", // name of the backend
+    "participants": [
+        {
+            "name": "Alice", // name of the participant
+            "nqubits": 1,  // number of qubits of the circuit
+            "layout": 
+                {
+                    "7q": null,   // layout for 7qubit of type [0, 1, 2, ...], the coupling map the participant will use for the backend
+                    "16q": null,   // layout for 16qubit of type [0, 1, 2, ...], the coupling map the participant will use for the backend
+                    "27q": null   // layout for 27qubit of type [0, 1, 2, ...], the coupling map the participant will use for the backend
+                },
+            "protocol":
+                {
+                    "0": "Alice_Qasm1.txt",
+                    "1": "Alice_Qasm2.txt"
+                }        
+        },
+
+        {
+            "name": "Bob",
+            "nqubits": 1,
+            "layout": 
+                {
+                    "7q": null,
+                    "16q": null,
+                    "27q": null
+                },
+
+            "protocol":
+                {
+                    "0": "Bob_Qasm1.txt",
+                    "1": "Bob_Qasm2.txt"
+                }          
+         }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "backend": "ibm_perth",
+    "participants": [
+        {
+            "name": "Alice",
+            "nqubits": 3,
+            "layout": {
+                "7q": null,
+                "16q": null,
+                "27q": null
+            },
+            "protocol": {
+                "1": "Oracle_Alice_pos00.txt",
+                "2": "Oracle_Alice_pos01.txt",
+                "3": "Oracle_Alice_pos10.txt",
+                "4": "Oracle_Alice_pos11.txt"
+            }
+        },
+        {
+            "name": "Bob",
+            "nqubits": 3,
+            "layout": {
+                "7q": null,
+                "16q": null,
+                "27q": null
+            },
+            "protocol": {
+                "1": "Oracle_Bob_pos00.txt",
+                "2": "Oracle_Bob_pos01.txt",
+                "3": "Oracle_Bob_pos10.txt",
+                "4": "Oracle_Bob_pos11.txt"
+            }
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+OPENQASM 2.0;
+include "qelib1.inc";
+
+gate ccz a,b,c 
+{
+    h c;
+    ccx a,b,c
+    h c;
+}
+
+qreg q[3];
+
+ccz q[0],q[1],q[2]
+
+barrier q;
