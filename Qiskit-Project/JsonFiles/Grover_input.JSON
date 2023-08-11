@@ -10,10 +10,10 @@
                 "27q": null
             },
             "protocol": {
-                "1": "Oracle_Alice_pos00.txt",
-                "2": "Oracle_Alice_pos01.txt",
-                "3": "Oracle_Alice_pos10.txt",
-                "4": "Oracle_Alice_pos11.txt"
+                "0": "Oracle_Alice_pos00.txt",
+                "1": "Oracle_Alice_pos01.txt",
+                "2": "Oracle_Alice_pos10.txt",
+                "3": "Oracle_Alice_pos11.txt"
             }
         },
         {
@@ -25,10 +25,10 @@
                 "27q": null
             },
             "protocol": {
-                "1": "Oracle_Bob_pos00.txt",
-                "2": "Oracle_Bob_pos01.txt",
-                "3": "Oracle_Bob_pos10.txt",
-                "4": "Oracle_Bob_pos11.txt"
+                "0": "Oracle_Bob_pos00.txt",
+                "1": "Oracle_Bob_pos01.txt",
+                "2": "Oracle_Bob_pos10.txt",
+                "3": "Oracle_Bob_pos11.txt"
             }
         }
     ]

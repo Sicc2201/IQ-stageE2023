@@ -1,5 +1,5 @@
 {
-    "backend": "ibm_perth", // name of the backend
+    "backend": "ibmq_lima", // name of the backend
     "participants": [
         {
             "name": "Alice", // name of the participant

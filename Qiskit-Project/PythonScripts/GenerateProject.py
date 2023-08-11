@@ -1,4 +1,12 @@
 #########################################################################
+"""
+Title: GenerateProject.py
+Author: Christopher Sicotte
+Date of creation: 31/07/23
+Last edited: 10/08/23
+
+"""
+#########################################################################
 """"
 A script that generates the dependencies when creating a new project
 
@@ -77,7 +85,7 @@ def main():
 
         if not os.path.exists(qasmFolder):
             os.makedirs(qasmFolder)
-            os.makedirs(qasmFolder + "/Communication")
+            os.makedirs(qasmFolder + "/Global")
             with open(jsonFile, "r") as f:
                 jsfile = json.load(f)
             for p in jsfile["participants"]:

@@ -9,7 +9,7 @@ gate doubleSwap a,b,c
 }
 
 
-qreg q[7];
+qreg q[5];
 
 doubleSwap q[0],q[1],q[2];
 

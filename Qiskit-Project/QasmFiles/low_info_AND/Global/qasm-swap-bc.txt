@@ -4,8 +4,8 @@ include "qelib1.inc";
 gate swap a,b { cx a,b; cx b,a; cx a,b; }
 
 
-qreg q[7];
+qreg q[5];
 
-swap q[0],q[1];
+swap q[1],q[2];
 
 barrier q;

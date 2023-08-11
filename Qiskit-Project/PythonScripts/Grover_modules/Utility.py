@@ -1,53 +1,69 @@
+#########################################################################
+"""
+Title: Utility.py
+Author: Christopher Sicotte
+Date of creation: 31/07/23
+Last edited: 11/08/23
+
+"""
+#########################################################################
+""""
+This file contains various utility functions Grover specific
+
+Functions:
+
+- CheckPower2(a)
+
+- CheckCalendars(a, b)
+
+- ShowResults(job, threshold)
+
+"""
+########################################################################
+
+# imports
 from math import floor, ceil, log2
 
-# measure i qubits for i classical bit 
-def MesureQubits(qc, nqubits):
-    for i in range(nqubits):
-        qc.measure(i, i)
-
+# check if a number is a power of 2
 def CheckPower2(a):
-    return ceil(log2(a)) != floor(log2(a))
+    return ceil(log2(a)) == floor(log2(a))
 
-# Ensure that two participants has their calendar of the same size        
-def CheckCalendars(a, b, nqubits):
+# Ensures that two participants has a valid calendar
+def CheckCalendars(a, b):
 
+    # check if calendars are the same size (not relevant anymore)
     if len(a) != len(b):
         raise Exception("the two calendar must be the same size")
-    if not CheckPower2(a):
+    # check if calendars lenghts are a power of 2 (not relevant anymore)
+    if not CheckPower2(len(a)):
         raise Exception("the two calendar's length must be a power of 2")
-    if not CheckPower2(b):
+    if not CheckPower2(len(b)):
         raise Exception("the two calendar's length must be a power of 2")
-    if (len(a) + len(b) + 2) > nqubits:
-        raise Exception("Your calendars are to big for your backend")
+    # check if both calendar are of lenght 4
     if len(a) != 4 or len(b) != 4:
         raise Exception("Calendars must be of length 4")
     print("calendars ok")
     return True
 
-
-# swap all working qubits from the messenger to the receiver 
-# messenger and receiver are the index of the participant
-def SwapAll(qc, nqubits, messenger, receiver):
-    for i in range(nqubits):
-        qc.swap(i + nqubits * messenger, i + nqubits * receiver)
-
-def InverseResults(results, threshold):
+# Allow to clearly see the result of the job
+def ShowResults(job, threshold=int(1024/3)):
+    results = list(job.result().get_counts().items())
     best_results = []
-    # result only consider elements over a certain threshold
+
+    # result only consider elements over a certain threshold (not relevent for calendar of lenght 4)
     for r in results:
+        # if value of result higher than the threshold, add it to best_results
         if r[1] >= threshold:
             best_results.append(r[0])
-
-    # inverse the binary result because qiskit have inversed result
-    # Example: result = 001 = 1, true value = 100 = 4
     results = []
+
+    # for results over the threshold, convert binary to decimal
     for i in best_results:
-        results.append(int(str(i)[::-1], 2))
+        results.append(int(str(i), 2))
 
     if not results:
-        print("there are no solutions for these calendars")
-
+        print("\n********************************************\n\nthere are no solutions for these calendars\n\n********************************************")
     elif len(results) == 1:
-        print("the solution is: ", results[0])
+        print("\n********************************************\n\nthe solution is position: ", results[0], "\n\n********************************************")
     else:
-        print("there are", len(results),"solutions: ", results)
+        print("\n********************************************\n\nthere are", len(results),"solutions: ", results, "\n\n********************************************")
