@@ -18,30 +18,25 @@ As mentionned above, there is also jupyter notebook with some distributed algori
 
 ## Getting Started
 
+Disclaimer: All of this project as been done on linux.
+
 ### Prequisite
 
-        suppose to get a copy button
-
+- python 3.8 or higher
 
 ### Installation
 
-```sh
+1. You need to open a terminal in the Qiskit-Project directory
+2. activate the virtual environnement
+
+```
 pip install -r requirement.txt
 ```
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-
 ## Usage
 
-
+1. You need to open a terminal in the Qiskit-Project directory
+2. activate the virtual environnement
 
 ## Contact
 
