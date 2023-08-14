@@ -18,7 +18,7 @@ As mentionned above, there is also jupyter notebook with some distributed algori
 
 ## Getting Started
 
-Disclaimer: All of this project as been done on linux.
+Disclaimer: All of this project as been done on linux. It is tested on windows but, there might still be some errors.
 
 ### Prequisite
 
@@ -92,7 +92,7 @@ Christopher Sicotte - Sicc2201@usherbrooke.ca
 Andrew W. Cross, Lev S. Bishop, John A. Smolin, Jay M. Gambetta. Open Quantum Assembly Language. https://arxiv.org/pdf/1707.03429.pdf, 2017. accessed July 2023.
 
 <a id="1">[2]</a> 
-Mark Braverman, Ankit Garg, Young Kun Ko, Jieming Mao.Near-optimal bounds on bounded-round quantum communication complexity of disjointness. https://arxiv.org/pdf/1505.03110.pdf, 2018. accessed July 2023.
+Mark Braverman, Ankit Garg, Young Kun Ko, Jieming Mao. Near-optimal bounds on bounded-round quantum communication complexity of disjointness. https://arxiv.org/pdf/1505.03110.pdf, 2018. accessed July 2023.
 
 <a id="1">[3]</a> 
 Ronald de Wolf, Quantum Computing: Lecture Notes. https://arxiv.org/pdf/1907.09415.pdf, 2011. accessed May 2023.
