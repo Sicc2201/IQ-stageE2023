@@ -26,7 +26,10 @@ from qiskit.visualization import plot_gate_map
 from qiskit import IBMQ
 
 # get your IBM credentials and return the provider
-def GetProvider():
+def GetProvider(IBM_Token = ""):
+    # if this is the first time you use IBM services
+    if IBM_Token != "":
+        IBMQ.save_account(IBM_Token)
     provider = IBMQ.load_account() # load IBM account if you're already connected
     provider.backends()  # list of backends
     return provider
