@@ -18,7 +18,7 @@ As mentionned above, there is also jupyter notebook with some distributed algori
 
 ## Getting Started
 
-Disclaimer: All of this project as been done on linux. It is tested on windows but, there might still be some errors.
+Disclaimer: All of this project as been done on linux. It is tested on windows but, there might still be some errors. Not tested on MAC.
 
 ### Prequisite
 
