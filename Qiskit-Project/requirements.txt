@@ -4,6 +4,7 @@ qiskit-qasm3-import
 qiskit
 qiskit-ibm-runtime
 qiskit-ibm-provider
+qiskit_ibm_provider
 matplotlib
 numpy
 pylatexenc

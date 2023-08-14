@@ -71,23 +71,34 @@ pip install -r requirements.txt
 
 Both OS:
 
+IMPORTANT!!
 If it is the first time you use the IBM quantum processors, you need to create your IBM quantum account there: https://quantum-computing.ibm.com/ and then add your API_TOKEN:
 - Run the script "SaveIBMAccount.py" with your API TOKEN as argument:
 ```
-python SaveIBMAccount.py MY_API_TOKEN
+python PythonScripts\SaveIBMAccount.py MY_API_TOKEN
 ```
 or
 ```
-python3 SaveIBMAccount.py MY_API_TOKEN
+python3 PythonScripts/SaveIBMAccount.py MY_API_TOKEN
 ```
 
+## Structure
+
+
+
 ## Usage
+
+Note that Linux paths use "/" and windows paths use "\". So when you need to run a command keep that in mind
 
 ### Run premade algorithms
 1. Make sure your working directory is Qiskit-Project and your venv is activated (see installation)
 2. Execute one of the python scripts in the "PythonScript" directory. For example:
 ```
-python3 PythonScripts/Gover.py
+python PythonScripts\Grover.py
+```
+or
+```
+python3 PythonScripts/Grover.py
 ```
 ### Create new project
 In this project, the user have the opportunity to create his own with a head start. The script "GenerateProject.py" allow the 
@@ -111,6 +122,17 @@ python PythonScripts/GenerateProject.py -q 3 -b ibmq_perth
 - vs code (the one used to create the initial project)
 - visual studio
 - pyCharm
+
+4. What you need to modify to create your project:
+
+- JsonFiles/<project name>_input.JSON:
+    This file is the input that the main script will use to create participants and create the global circuit. All informations about this file is in the header of the file.
+
+- PythonScripts/<project name>.py
+    This file is the main script that the user must change to add protocols, save circuits, clear folders, etc. All informations about this file is in the header of the file. Looking at other main scripts for ideas and protocols is recommended.
+
+- QasmFiles/<project name> 
+    This directory is where the input qasm files are. 
 
 ## Contact
 

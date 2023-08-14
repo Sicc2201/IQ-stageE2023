@@ -48,6 +48,8 @@ def main():
 
     # protocol.ApplyProtocol(init.backend, init.qc, init.participants, 2)      # Apply protocol to the circuit at timstep 2
 
+    # protocol.ApplySingleProtocol(init.backend, init.qc, alice, 1)      # Apply protocol 1 of alice to the circuit
+
     # measure the qubit of Charlie
     # init.qc.measure(2, 0)
 
