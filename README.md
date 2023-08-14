@@ -42,20 +42,23 @@ source .venv/bin/activate
 4. Install pip requirements
 
 ```
-pip install -r requirement.txt
+pip install -r requirements.txt
 ```
 Windows:
 ################################################################### TO DO################################
 1. Clone or download this git repository 
 2. You need to open a terminal in the Qiskit-Project directory
-3. activate the virtual environnement:
+3. Create a new virtual environnement:
 ```
-source .venv/bin/activate
+conda create -n <Name of venv>
+```
+4. Activate venv:
+```
+conda activate <Name of venv>
 ```
 4. Install pip requirements
-
 ```
-pip install -r requirement.txt
+pip install -r requirements.txt
 ```
 #############################################################################################################
 ## Usage
