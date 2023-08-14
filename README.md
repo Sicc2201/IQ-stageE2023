@@ -12,9 +12,9 @@ want to allow the user of the project to generate participants and map each part
 avoid transpiling a global circuit.
 
 The strategy here is to create each participants a quantum circuit and transpile it before adding it to a global circuit. The
-Addition is done according to a default layout or a layout given by the user
+Addition is done according to a default layout or a layout given by the user.
 
-As mentionned above, there is also jupyter notebook with some distributed algorithms
+As mentionned above, there is also jupyter notebook with some distributed algorithms.
 
 ## Getting Started
 
@@ -22,21 +22,65 @@ Disclaimer: All of this project as been done on linux.
 
 ### Prequisite
 
-- python 3.8 or higher
+- python 3.8 or higher:
+```
+https://www.python.org/downloads/
+```
+- Anaconda:
+```
+https://www.anaconda.com/download
+```  
 
 ### Installation
-
-1. You need to open a terminal in the Qiskit-Project directory
-2. activate the virtual environnement
+Linux:
+1. Clone or download this git repository 
+2. You need to open a terminal in the Qiskit-Project directory
+3. activate the virtual environnement:
+```
+source .venv/bin/activate
+```
+4. Install pip requirements
 
 ```
 pip install -r requirement.txt
 ```
+Windows:
+################################################################### TO DO################################
+1. Clone or download this git repository 
+2. You need to open a terminal in the Qiskit-Project directory
+3. activate the virtual environnement:
+```
+source .venv/bin/activate
+```
+4. Install pip requirements
 
+```
+pip install -r requirement.txt
+```
+#############################################################################################################
 ## Usage
 
-1. You need to open a terminal in the Qiskit-Project directory
-2. activate the virtual environnement
+### Run premade algorithms
+1. Make sure your working directory is Qiskit-Project and your venv is activated (see installation)
+2. Execute one of the python scripts in the "PythonScript" directory. For example:
+```
+python3 PythonScripts/Gover.py
+```
+### Create new project
+In this project, te user have the opportunity to create his own with a head start. The script "GenerateProject.py" allow the 
+user to create his project and create all the dependencies and template to create participants and protocol of his own. 
+At the execution of the script, the user can choose to add arguments to set some parameters for the project.
+possibles arguments:
+-h: print help message in terminal
+-b backend: set the project backend
+-q nqubits: set the participants number of qubits
+
+Usage:
+1. Make sure your working directory is Qiskit-Project and your venv is activated (see installation)
+2. Execute the "GeneratePrject" script with wanted arguments. For example:
+```
+python3 PythonScripts/GenerateProject.py -q 3 -b ibmq_perth
+```
 
 ## Contact
 
