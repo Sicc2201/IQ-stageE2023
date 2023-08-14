@@ -58,7 +58,7 @@ def main():
     while(True):
         calendar_a = input("enter the calendar (length = 4) of Alice (only 0 or 1):\n")
         calendar_b = input("enter the calendar (length = 4) of Bob (only 0 or 1):\n")
-        if util.CheckCalendars(calendar_a, calendar_b, 7):
+        if util.CheckCalendars(calendar_a, calendar_b):
             break
     
     nBits = 2 # number of classical bit in the global circuit
