@@ -3,7 +3,7 @@ jstyleson
 qiskit-qasm3-import
 qiskit
 qiskit-ibm-runtime
-qiskit_ibm_provider
+qiskit-ibm-provider
 matplotlib
 numpy
 pylatexenc
