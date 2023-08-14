@@ -67,7 +67,7 @@ pip install -r requirement.txt
 python3 PythonScripts/Gover.py
 ```
 ### Create new project
-In this project, te user have the opportunity to create his own with a head start. The script "GenerateProject.py" allow the 
+In this project, the user have the opportunity to create his own with a head start. The script "GenerateProject.py" allow the 
 user to create his project and create all the dependencies and template to create participants and protocol of his own. 
 At the execution of the script, the user can choose to add arguments to set some parameters for the project.
 possibles arguments:
@@ -77,7 +77,7 @@ possibles arguments:
 
 Usage:
 1. Make sure your working directory is Qiskit-Project and your venv is activated (see installation)
-2. Execute the "GeneratePrject" script with wanted arguments. For example:
+2. Execute the "GenerateProject" script with wanted arguments. For example:
 ```
 python3 PythonScripts/GenerateProject.py -q 3 -b ibmq_perth
 ```
@@ -92,10 +92,11 @@ Dijkstra, E. W. (1968).
 Go to statement considered harmful. 
 Communications of the ACM, 11(3), 147-148.
 
-https://www.mathstat.dal.ca/~mamy/Papers/staq.pdf
+<a id="1">[1]</a> 
+Andrew W. Cross, Lev S. Bishop, John A. Smolin, Jay M. Gambetta. Open Quantum Assembly Language. https://arxiv.org/pdf/1707.03429.pdf, 2017. accessed July 2023.
 
-https://arxiv.org/abs/1707.03429
+<a id="1">[2]</a> 
+Mark Braverman, Ankit Garg, Young Kun Ko, Jieming Mao.Near-optimal bounds on bounded-round quantum communication complexity of disjointness. https://arxiv.org/pdf/1505.03110.pdf, 2018. accessed July 2023.
 
-https://arxiv.org/abs/1505.03110
-
-https://arxiv.org/abs/1907.09415
+<a id="1">[3]</a> 
+Ronald de Wolf, Quantum Computing: Lecture Notes. https://arxiv.org/pdf/1907.09415.pdf, 2011. accessed May 2023.
