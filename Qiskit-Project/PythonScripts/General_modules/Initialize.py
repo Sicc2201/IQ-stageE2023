@@ -37,6 +37,7 @@ from General_modules import IBMManager as ibm
 from General_modules import InitClass
 
 from qiskit import transpile
+import platform
 import re # import REGEX
 
 def InitiateOperation(sysArg, nBits):
@@ -46,20 +47,14 @@ def InitiateOperation(sysArg, nBits):
 
     #######################################################################################################    
 
-    # use REGEX to isolate the name of the project
-    print("platform os: ", platform.system())
-    # use REGEX to isolate the name of the project
-    if platform.system() == "Linux" or platform.system() == "Darwin":
-        arg = re.findall(r"/.*\.", sysArg)
+    # use REGEX to isolate the name of the project depending on OS
     if platform.system() == "Windows":
         arg = re.findall(r"\\.*\.", sysArg)
     else:
-        raise Exception("OS not compatible")
- 
-    print("regex out args = ", arg)
-    arg_str = arg[0]
-    subarg =  arg_str[1 : -1]
+        arg = re.findall(r"/.*\.", sysArg)
 
+    arg_str = arg[0]
+    subarg =  arg_str[1 : -1]   
     inputFile = inputManager.LoadInput(subarg)                        # get the input file
     backendInput = inputFile["backend"]                               # get the backend
     participantsInput = inputFile["participants"]                     # get the participants infos

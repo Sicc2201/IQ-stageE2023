@@ -18,7 +18,9 @@ As mentionned above, there is also jupyter notebook with some distributed algori
 
 ## Getting Started
 
-Disclaimer: All of this project as been done on linux. It is tested on windows but, there might still be some errors. Not tested on MAC.
+### Disclaimer
+
+All of this project as been done on linux. It is tested on windows but, there might still be some errors. Not tested on MAC.
 
 ### Prequisite
 
@@ -33,6 +35,7 @@ https://www.anaconda.com/download
 
 ### Installation
 Linux:
+
 1. Clone or download this git repository 
 2. You need to open a terminal in the Qiskit-Project directory
 3. activate the virtual environnement:
@@ -64,6 +67,18 @@ conda activate <Name of venv>
 6. Install pip requirements
 ```
 pip install -r requirements.txt
+```
+
+Both OS:
+
+If it is the first time you use the IBM quantum processors, you need to create your IBM quantum account there: https://quantum-computing.ibm.com/ and then add your API_TOKEN:
+- Run the script "SaveIBMAccount.py" with your API TOKEN as argument:
+```
+python SaveIBMAccount.py MY_API_TOKEN
+```
+or
+```
+python3 SaveIBMAccount.py MY_API_TOKEN
 ```
 
 ## Usage
