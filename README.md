@@ -87,10 +87,6 @@ python3 PythonScripts/GenerateProject.py -q 3 -b ibmq_perth
 Christopher Sicotte - Sicc2201@usherbrooke.ca
 
 ## References
-<a id="1">[1]</a> 
-Dijkstra, E. W. (1968). 
-Go to statement considered harmful. 
-Communications of the ACM, 11(3), 147-148.
 
 <a id="1">[1]</a> 
 Andrew W. Cross, Lev S. Bishop, John A. Smolin, Jay M. Gambetta. Open Quantum Assembly Language. https://arxiv.org/pdf/1707.03429.pdf, 2017. accessed July 2023.
