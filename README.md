@@ -87,7 +87,7 @@ python3 SaveIBMAccount.py MY_API_TOKEN
 1. Make sure your working directory is Qiskit-Project and your venv is activated (see installation)
 2. Execute one of the python scripts in the "PythonScript" directory. For example:
 ```
-python3 PythonScripts/Gover.py
+python3 PythonScripts/Grover.py
 ```
 ### Create new project
 In this project, the user have the opportunity to create his own with a head start. The script "GenerateProject.py" allow the 
@@ -102,7 +102,7 @@ Usage:
 1. Make sure your working directory is Qiskit-Project and your venv is activated (see installation)
 2. Execute the "GenerateProject" script with wanted arguments. For example:
 ```
-python PythonScripts/GenerateProject.py -q 3 -b ibmq_perth
+python PythonScripts/GenerateProject.py -q 3 -b ibm_perth
 ```
 (You might need to execute it with "python3" command instead of "python")
 
