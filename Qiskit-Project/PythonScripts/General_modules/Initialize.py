@@ -47,7 +47,16 @@ def InitiateOperation(sysArg, nBits):
     #######################################################################################################    
 
     # use REGEX to isolate the name of the project
-    arg = re.findall(r"/.*\.", sysArg)
+    print("platform os: ", platform.system())
+    # use REGEX to isolate the name of the project
+    if platform.system() == "Linux" or platform.system() == "Darwin":
+        arg = re.findall(r"/.*\.", sysArg)
+    if platform.system() == "Windows":
+        arg = re.findall(r"\\.*\.", sysArg)
+    else:
+        raise Exception("OS not compatible")
+ 
+    print("regex out args = ", arg)
     arg_str = arg[0]
     subarg =  arg_str[1 : -1]
 
