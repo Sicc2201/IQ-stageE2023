@@ -44,23 +44,28 @@ source .venv/bin/activate
 ```
 pip install -r requirements.txt
 ```
+
 Windows:
-################################################################### TO DO################################
+
 1. Clone or download this git repository 
-2. You need to open a terminal in the Qiskit-Project directory
-3. Create a new virtual environnement:
+2. Open a Anaconda Prompt
+3. Move in the Qiskit-Project directory
+```
+cd <full PATH to Qiskit-Project directory>
+```
+4. Create a new virtual environnement:
 ```
 conda create -n <Name of venv>
 ```
-4. Activate venv:
+5. Activate venv:
 ```
 conda activate <Name of venv>
 ```
-4. Install pip requirements
+6. Install pip requirements
 ```
 pip install -r requirements.txt
 ```
-#############################################################################################################
+
 ## Usage
 
 ### Run premade algorithms
@@ -82,8 +87,15 @@ Usage:
 1. Make sure your working directory is Qiskit-Project and your venv is activated (see installation)
 2. Execute the "GenerateProject" script with wanted arguments. For example:
 ```
-python3 PythonScripts/GenerateProject.py -q 3 -b ibmq_perth
+python PythonScripts/GenerateProject.py -q 3 -b ibmq_perth
 ```
+(You might need to execute it with "python3" command instead of "python")
+
+3. Open the project in the code editor of your choice. Here are some:
+
+- vs code (the one used to create the initial project)
+- visual studio
+- pyCharm
 
 ## Contact
 
@@ -94,8 +106,8 @@ Christopher Sicotte - Sicc2201@usherbrooke.ca
 <a id="1">[1]</a> 
 Andrew W. Cross, Lev S. Bishop, John A. Smolin, Jay M. Gambetta. Open Quantum Assembly Language. https://arxiv.org/pdf/1707.03429.pdf, 2017. accessed July 2023.
 
-<a id="1">[2]</a> 
+<a id="2">[2]</a> 
 Mark Braverman, Ankit Garg, Young Kun Ko, Jieming Mao. Near-optimal bounds on bounded-round quantum communication complexity of disjointness. https://arxiv.org/pdf/1505.03110.pdf, 2018. accessed July 2023.
 
-<a id="1">[3]</a> 
+<a id="3">[3]</a> 
 Ronald de Wolf, Quantum Computing: Lecture Notes. https://arxiv.org/pdf/1907.09415.pdf, 2011. accessed May 2023.
