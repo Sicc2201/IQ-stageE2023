@@ -95,7 +95,7 @@ python3 PythonScripts/SaveIBMAccount.py MY_API_TOKEN
 
 This project has 5 main directories when running protocols:
 
-- Images: This is the directory where all the saved PNG images will be stored. Saved PNG includes pictures of final circuit, participants circuit, job results, etc.
+- Qiskit-Project/Images: This is the directory where all the saved PNG images will be stored. Saved PNG includes pictures of final circuit, participants circuit, job results, etc.
 - Qiskit-Project/JsonFiles: This is the directory where all the json input files are. This is where the main scripts will fetch the file to create the participants.
 - Qiskit-Project/Qasm_output: This is the directory where all the saved qasm files will be stored. When you create a circuit and save in qasm format it will be there.
 - Qiskit-Project/QasmFiles: This is the directory where all the qasm input files are stored. When you create a qasm file as a protocol to feed the scripts, you must put them there. This directory contains other directories:
