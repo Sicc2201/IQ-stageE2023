@@ -113,7 +113,7 @@ Usage:
 1. Make sure your working directory is Qiskit-Project and your venv is activated (see installation)
 2. Execute the "GenerateProject" script with wanted arguments. For example:
 ```
-python PythonScripts/GenerateProject.py -q 3 -b ibmq_perth
+python PythonScripts/GenerateProject.py -q 3 -b ibm_perth
 ```
 (You might need to execute it with "python3" command instead of "python")
 
