@@ -124,7 +124,8 @@ python3 PythonScripts/Grover.py
 In this project, the user have the opportunity to create his own with a head start. The script "GenerateProject.py" allow the 
 user to create his project and create all the dependencies and template to create participants and protocol of his own. 
 At the execution of the script, the user can choose to add arguments to set some parameters for the project.
-possibles arguments:<br />
+possibles arguments:
+
 -h: print help message in terminal<br />
 -b backend: set the project backend<br />
 -q nqubits: set the participants number of qubits<br />
@@ -154,9 +155,13 @@ python PythonScripts/GenerateProject.py -q 3 -b ibm_perth
 - QasmFiles/<_projectName_> 
     This directory is where the input qasm files are. It needs 2 directories. One named "Participants",  containing a number of folders equal to the number of participants you have in the project. **Each one of these will have the name of a participant**. This is important because **the qasm files of each participants will be fetched there**, so you need to put your qasm files in the corresponding folder. The second folder is named "Global". This is where you will put the qasm files that interact with more than one participants that you have to add to the global circuit directly.
 
+<ins>Optional</ins>:
+- PythonScripts/<_projectName_>_modules
+    If needed, this directory is useful to store modules that contains utility functions specific top your project.
+
  ** **IMPORTANT** **
-If you add participants in the json input file, you **must** add a folder of the name of your new participant in the directory: 
-QasmFiles\<_projectName_>\Participants\< new folder with participant name >
+If you add participants in the json input file, you **MUST** add a folder of the name of your new participant in the directory: 
+QasmFiles\<_projectName_>\Participants\< _new folder with participant name_ >
 ## Contact
 
 Christopher Sicotte - Sicc2201@usherbrooke.ca
