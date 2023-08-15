@@ -124,10 +124,10 @@ python3 PythonScripts/Grover.py
 In this project, the user have the opportunity to create his own with a head start. The script "GenerateProject.py" allow the 
 user to create his project and create all the dependencies and template to create participants and protocol of his own. 
 At the execution of the script, the user can choose to add arguments to set some parameters for the project.
-possibles arguments:
--h: print help message in terminal
--b backend: set the project backend
--q nqubits: set the participants number of qubits
+possibles arguments:<br />
+-h: print help message in terminal<br />
+-b backend: set the project backend<br />
+-q nqubits: set the participants number of qubits<br />
 
 Usage:
 1. Make sure your working directory is Qiskit-Project and your venv is activated (see installation)
