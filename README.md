@@ -88,11 +88,11 @@ python3 PythonScripts/SaveIBMAccount.py MY_API_TOKEN
 
 ## Usage
 
-Note that Linux paths use "/" and windows paths use "\". So when you need to run a command keep that in mind
+Note that Linux paths use "/" and windows paths use "\\". So when you need to run a command keep that in mind
 
 ### Run premade algorithms
 1. Make sure your working directory is Qiskit-Project and your venv is activated (see installation)
-2. Execute one of the python scripts in the "PythonScript" directory. For example:
+2. Execute one of the python scripts in the "PythonScripts" directory. For example:
 ```
 python PythonScripts\Grover.py
 ```
@@ -125,13 +125,13 @@ python PythonScripts/GenerateProject.py -q 3 -b ibm_perth
 
 4. What you need to modify to create your project:
 
-- JsonFiles/<project name>_input.JSON:
+- JsonFiles/< project name >_input.JSON:
     This file is the input that the main script will use to create participants and create the global circuit. All informations about this file is in the header of the file.
 
-- PythonScripts/<project name>.py
+- PythonScripts/< project name >.py
     This file is the main script that the user must change to add protocols, save circuits, clear folders, etc. All informations about this file is in the header of the file. Looking at other main scripts for ideas and protocols is recommended.
 
-- QasmFiles/<project name> 
+- QasmFiles/< project name > 
     This directory is where the input qasm files are. 
 
 ## Contact
