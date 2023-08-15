@@ -126,9 +126,9 @@ user to create his project and create all the dependencies and templates to crea
 At the execution of the script, the user can choose to add arguments to set some parameters for the project.
 possibles arguments:
 
--h: print help message in terminal<br />
--b backend: set the project backend<br />
--q nqubits: set the participants number of qubits<br />
+-h -­> print help message in terminal<br />
+-b backend -> set the project backend<br />
+-q nqubits -> set the participants number of qubits<br />
 
 Usage:
 1. Make sure your working directory is Qiskit-Project and your venv is activated (see installation)
