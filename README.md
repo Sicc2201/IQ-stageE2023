@@ -161,7 +161,7 @@ python PythonScripts/GenerateProject.py -q 3 -b ibm_perth
 
  ** **IMPORTANT** **
 If you add participants in the json input file, you **MUST** add a folder of the name of your new participant in the directory: 
-QasmFiles\<_projectName_>\Participants\<_participantName_>
+QasmFiles\<_projectName_>\Participants\\<_participantName_>
 ## Contact
 
 Christopher Sicotte - Sicc2201@usherbrooke.ca
