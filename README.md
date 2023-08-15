@@ -147,18 +147,18 @@ It will create a new project with all the dependencies. The project name is "new
 
 4. What you need to modify to create your project:
 
-- JsonFiles/<_projectName_>_input.JSON:
-    This file is the input that the main script will use to create participants and create the global circuit. All information about this file is in the header of the file.
+- <ins>JsonFiles/<_projectName_>_input.JSON</ins><br />
+   This file is the input that the main script will use to create participants and create the global circuit. All information about this file is in the header of the file.
 
-- PythonScripts/<_projectName_>.py
-    This file is the main script that the user must change to add protocols, save circuits, clear folders, etc. All information about this file is in the header of the file. Looking at other main scripts for ideas and protocols is recommended.
+- <ins>PythonScripts/<_projectName_>.py</ins><br />
+   This file is the main script that the user must change to add protocols, save circuits, clear folders, etc. All information about this file is in the header of the file. Looking at other main scripts for ideas and protocols is recommended.
 
-- QasmFiles/<_projectName_> 
-    This directory is where the input QASM files are. It needs 2 directories. One named "Participants",  containing a number of folders equal to the number of participants you have in the project. **Each one of these will have the name of a participant**. This is important because **the QASM files of each participant will be fetched there**, so you need to put your QASM files in the corresponding folder. The second folder is named "Global". This is where you will put the QASM files that interact with more than one participant that you have to add to the global circuit directly.
+- <ins>QasmFiles/<_projectName_></ins><br />
+   This directory is where the input QASM files are. It needs 2 directories. One named "Participants",  containing a number of folders equal to the number of participants you have in the project. **Each one of these will have the name of a participant**. This is important because **the QASM files of each participant will be fetched there**, so you need to put your QASM files in the corresponding folder. The second folder is named "Global". This is where you will put the QASM files that interact with more than one participant that you have to add to the global circuit directly.
 
 <ins>Optional</ins>:
-- PythonScripts/<_projectName_>_modules
-    If needed, this directory is useful to store modules that contains utility functions specific top your project.
+- PythonScripts/<_projectName_>_modules<br />
+   If needed, this directory is useful to store modules that contains utility functions specific top your project.
 
  ** **IMPORTANT** **
 If you add participants in the json input file, you **MUST** add a folder of the name of your new participant in the directory: 
