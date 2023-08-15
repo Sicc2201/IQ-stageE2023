@@ -96,12 +96,12 @@ python3 PythonScripts/SaveIBMAccount.py MY_API_TOKEN
 This project has 5 main directories when running protocols:
 
 - Images: This is the directory where all the saved PNG images will be stored. Saved PNG includes pictures of final circuit, participants circuit, job results, etc.
-- JsonFiles: This is the directory where all the json input files are. This is where the main scripts will fetch the file to create the participants.
-- Qasm_output: This is the directory where all the saved qasm files will be stored. When you create a circuit and save in qasm format it will be there.
-- QasmFiles: This is the directory where all the qasm input files are stored. When you create a qasm file as a protocol to feed the scripts, you must put them there. This directory contains other directories:
+- Qiskit-Project/JsonFiles: This is the directory where all the json input files are. This is where the main scripts will fetch the file to create the participants.
+- Qiskit-Project/Qasm_output: This is the directory where all the saved qasm files will be stored. When you create a circuit and save in qasm format it will be there.
+- Qiskit-Project/QasmFiles: This is the directory where all the qasm input files are stored. When you create a qasm file as a protocol to feed the scripts, you must put them there. This directory contains other directories:
     - QasmFiles/<_projectName_>/participants -> Contains folders of the name of every participants which contains every qasm protocols files of the participants.
     - QasmFiles/<_projectName_>/Global -> Contains all the qasm protocol file that affects more than one participants and must be applied in the global circuit.
-- PythonScripts: Contains all the python scripts of the projects. The main scripts are in this directory, but the utility functions are in seperate folders.
+- Qiskit-Project/PythonScripts: Contains all the python scripts of the projects. The main scripts are in this directory, but the utility functions are in seperate folders.
 This directory contains other directories:
     - PythonScripts/General_modules -> Contains all the general utility functions used in all the projects.
     - PythonScripts/<_projectName_>_modules -> Automatically created when a new project is generated. It is for the user, if he wants to create new utility functions specific to the project. Some Specific modules have already been created for the example project.
