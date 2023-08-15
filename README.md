@@ -134,8 +134,9 @@ Usage:
 1. Make sure your working directory is Qiskit-Project and your venv is activated (see installation)
 2. Execute the "GenerateProject" script with wanted arguments. For example
 ```
-python PythonScripts/GenerateProject.py -q 3 -b ibm_perth
+python PythonScripts/GenerateProject.py newProject -q 3 -b ibm_perth
 ```
+It will create a new project with all the dependencies. The project name is "newProject", all participants will have 3 qubits in their circuit and the backend will be "ibm_perth".
 (You might need to execute it with "python3" command instead of "python")
 
 3. Open the project in the code editor of your choice. Here are some:
