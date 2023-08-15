@@ -67,11 +67,11 @@ cd <full PATH to Qiskit-Project directory>
 ```
 4. Create a new virtual environnement:
 ```
-conda create -n <Name of venv>
+conda create -n venv_name
 ```
 5. Activate venv:
 ```
-conda activate <Name of venv>
+conda activate venv_name
 ```
 6. Install pip requirements
 ```
